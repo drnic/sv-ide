@@ -21,7 +21,7 @@ class ParameterComments
     # output
     (function_document_lines[0..param_start_line-1] +
       [new_parameter_block] +
-      function_document_lines[param_end_line+2..-1]).join
+      function_document_lines[param_end_line+1..-1]).join
   end
   
   def parse_parameter_block

@@ -17,6 +17,10 @@ class TestParameterComments < Test::Unit::TestCase
       assert_equal("#   l_VarName& - TODO", @result_lines[26])
       assert_equal("#", @result_lines[27])
     end
+    
+    should "still have RETURNS section" do
+      assert_equal("# RETURNS:", @result_lines[28])
+    end
   end
   
   context "function with no parameters" do
