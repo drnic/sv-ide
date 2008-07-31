@@ -7,19 +7,20 @@
 #
 #   File:       $1
 #   Created:    `date`
-#   Creator:    TODO
-#   $Revision: $
-#   $Id: $
+#   Creator:    `#!/usr/bin/env ruby
+print ENV['SV_USER'] || ENV['USER'] || 'TODO'`
+#   \$Revision: \$
+#   \$Id: \$
 #
 #       ============================================================
-#       Copyright C - 2001 All rights reserved. Saville Systems PLC.
+#       Copyright C - `date "+%Y"` All rights reserved. $SV_ORGANIZATION_NAME
 #
 #       No part of this program may be reproduced or adapted in any
 #             form or by any means, electronic or mechanical,
-#       without permission from Saville Systems PLC. This program is
+#       without permission from $SV_ORGANIZATION_NAME. This program is
 #           confidential and may not be disclosed, decompiled or
 #           reverse engineered without permission in writing from
-#                           Saville Systems PLC.
+#                           $SV_ORGANIZATION_NAME.
 #       ============================================================
 #
 # NAME: $1
@@ -34,7 +35,7 @@
 #   The function returns TODO
 #
 # REVISION HISTORY:
-#   $Log: $
+#   \$Log: \$
 #
 #---------------------------------------------------------------------------
 
