@@ -16,7 +16,7 @@ class FunctionDefn < OpenStruct
   end
   
   protected
-  def self.find_by_fixtures(name)
+  def self.find_by_fixtures(name, interface = "1")
     @@function_defns ||= begin
       function_defns = YAML.load(File.read(File.dirname(__FILE__) + "/../fixtures/function_defns.yml"))
       function_defns.inject({}) do |mem, func_def|
@@ -26,7 +26,7 @@ class FunctionDefn < OpenStruct
         mem
       end
     end
-    @@function_defns[name]["1"]
+    @@function_defns[name][interface]
   end
   
   def self.test_env?
