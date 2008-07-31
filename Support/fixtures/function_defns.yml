@@ -15,3 +15,14 @@ ReferenceCodeByLabel-1:
     - c_Code$
     - c_Reference$
   interface: 1
+fTT_Date-1:
+  name: fTT_Date~
+  signature: fTT_Date~()
+  interface: 1
+fTT_Date-2:
+  name: fTT_Date~
+  signature: fTT_Date~(const c_DaysAgo&)
+  parameters:
+    - c_DaysAgo&
+  interface: 2
+  

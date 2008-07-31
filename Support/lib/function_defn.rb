@@ -1,20 +1,17 @@
 require "ostruct"
 require "yaml"
 class FunctionDefn < OpenStruct
-  def self.find(name, interface = "1")
-    unless test_env?
-    else
-      find_by_fixtures(name, interface)
-    end
+  # Returns FunctionDefn for function with +name+ (e.g. ReferenceCodeByLabel&)
+  # The result is always a hash with the key a number 1+ representing its interface number
+  # Normally there is only one interface, so the result will be {1 => <FunctionDefn name=ReferenceCodeByLabel&>}
+  def self.find_by_name(name)
+    function_defns[name]
   end
   
   # Returns a list of function names that start with +partial+
   # Note, there may be 1+ interface versions for each result
   def self.find_by_partial(partial)
-    unless test_env?
-    else
-      find_by_partial_by_fixtures(partial)
-    end
+    function_defns.keys.select { |func_name| func_name =~ /^#{partial}/ }
   end
   
   # If no parameters provided to initializer, then return empty array.
@@ -27,25 +24,25 @@ class FunctionDefn < OpenStruct
   
   protected
   def self.function_defns
-    @@function_defns ||= begin
-      function_defns = YAML.load(File.read(File.dirname(__FILE__) + "/../fixtures/function_defns.yml"))
-      function_defns.inject({}) do |mem, func_def|
-        name_interface, func = func_def
-        name, interface = name_interface.split('-')
-        mem[func["name"]] = { interface => self.new(func) }
-        mem
-      end
+    test_env? ? function_defns_by_fixtures : function_defns_by_thp
+  end
+  
+  def self.function_defns_by_fixtures
+    function_defns = YAML.load(File.read(File.dirname(__FILE__) + "/../fixtures/function_defns.yml"))
+    function_defns.inject({}) do |mem, func_def|
+      name_interface, func = func_def
+      name, interface = name_interface.split('-')
+      full_name = func["name"]
+      mem[full_name] ||= {}
+      mem[full_name][interface.to_i] = self.new(func)
+      mem
     end
   end
+  
+  def self.function_defns_by_thp
+    # TODO; including caching of results
+  end
 
-  def self.find_by_fixtures(name, interface = "1")
-    function_defns[name][interface]
-  end
-  
-  def self.find_by_partial_by_fixtures(partial)
-    function_defns.keys.select { |func_name| func_name =~ /^#{partial}/ }
-  end
-  
   def self.test_env?
     ENV['EPM_ENV'] == 'test'
   end
