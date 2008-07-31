@@ -16,7 +16,7 @@ class ParameterComments
     # (optional) determine if any parameter comments already exist
     
     # replace PARAMETERS: block with parameter stubs
-    new_parameter_block = generate_parameter_block(function.parameters)
+    new_parameter_block = generate_parameter_block(function.parameters, parameter_block[1..-1])
     
     # output
     (function_document_lines[0..param_start_line-1] +
@@ -31,20 +31,26 @@ class ParameterComments
         next unless line =~ /^# PARAMETERS/
         start_line = index
       else
-        next unless line = '#'
+        next unless line.strip == "#"
         end_line   = index
         break
       end
     end
-    [function.lines[start_line, end_line], start_line, end_line]
+    [function.lines[start_line..end_line], start_line, end_line]
   end
   
-  def generate_parameter_block(parameters)
+  def generate_parameter_block(parameters, existing_comment_lines)
     "# PARAMETERS:\n" +
     if parameters.size == 0 
       "#   None\n"
     else
-      parameters.map { |param| "#   #{param} - TODO\n" }.join
+      parameters.map do |param|
+        if line = existing_comment_lines.find { |line| line =~ /^#\s+#{param}\s+/ }
+          line
+        else
+          "#   #{param} - TODO\n"
+        end
+      end.join
     end +
     "#\n"
   end
