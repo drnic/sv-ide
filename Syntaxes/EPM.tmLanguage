@@ -7,9 +7,9 @@
 		<string>epm</string>
 	</array>
 	<key>foldingStartMarker</key>
-	<string>/\*\*|\{\s*$</string>
+	<string>\{\s*$</string>
 	<key>foldingStopMarker</key>
-	<string>\*\*/|^\s*\}</string>
+	<string>^\s*\}</string>
 	<key>keyEquivalent</key>
 	<string>^~E</string>
 	<key>name</key>
