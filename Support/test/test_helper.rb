@@ -10,3 +10,9 @@ gem "Shoulda"
 require "Shoulda"
 gem "mocha"
 require "mocha"
+
+class Test::Unit::TestCase
+  def fixtures_dir
+    File.dirname(__FILE__) + "/../fixtures"
+  end
+end

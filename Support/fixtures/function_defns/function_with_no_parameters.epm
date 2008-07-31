@@ -1,0 +1,42 @@
+#---------------------------------------------------------------------------
+#
+#   File:       fYourFunctionName&
+#   Created:    Thu Jul 31 22:59:41 EST 2008
+#   Creator:    drnic
+#   $Revision: $
+#   $Id: $
+#
+#       ============================================================
+#       Copyright C - 2008 All rights reserved. Mocra
+#
+#       No part of this program may be reproduced or adapted in any
+#             form or by any means, electronic or mechanical,
+#       without permission from Mocra. This program is
+#           confidential and may not be disclosed, decompiled or
+#           reverse engineered without permission in writing from
+#                           Mocra.
+#       ============================================================
+#
+# NAME: fYourFunctionName&
+#
+# DESCRIPTION:
+#   The function TODO
+#
+# PARAMETERS:
+#   TODO
+#
+# RETURNS:
+#   The function returns TODO
+#
+# REVISION HISTORY:
+#   $Log: $
+#
+#---------------------------------------------------------------------------
+
+fYourFunctionName&() =
+{
+  return 1;
+}
+#
+#       End (of fYourFunctionName&)
+#
