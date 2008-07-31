@@ -1,9 +1,9 @@
 require "ostruct"
 class FunctionDefn < OpenStruct
-  def self.find(name)
+  def self.find(name, interface = "1")
     unless test_env?
     else
-      find_by_fixtures(name)
+      find_by_fixtures(name, interface)
     end
   end
   
