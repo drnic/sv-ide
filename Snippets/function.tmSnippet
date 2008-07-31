@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#---------------------------------------------------------------------------
+#
+#   File:       $1
+#   Created:    TODO
+#   Creator:    TODO
+#   $Revision: $
+#   $Id: $
+#
+#       ============================================================
+#       Copyright C - 2001 All rights reserved. Saville Systems PLC.
+#
+#       No part of this program may be reproduced or adapted in any
+#             form or by any means, electronic or mechanical,
+#       without permission from Saville Systems PLC. This program is
+#           confidential and may not be disclosed, decompiled or
+#           reverse engineered without permission in writing from
+#                           Saville Systems PLC.
+#       ============================================================
+#
+# NAME: $1
+#
+# DESCRIPTION:
+#   The funtion TODO
+#
+# PARAMETERS:
+#   TODO
+#
+# RETURNS:
+#   The function returns TODO
+#
+# REVISION HISTORY:
+#   $Log: $
+#
+#---------------------------------------------------------------------------
+
+${1:fYourFunctionName&amp;}(${2:const c_MyParameter$}) =
+{
+   return 1;
+}
+#
+#       End (of $1)
+#
+</string>
+	<key>name</key>
+	<string>function</string>
+	<key>scope</key>
+	<string>source.epm</string>
+	<key>tabTrigger</key>
+	<string>funct</string>
+	<key>uuid</key>
+	<string>9F45DCB1-DDFB-4426-839C-D5D3AB8763D9</string>
+</dict>
+</plist>
