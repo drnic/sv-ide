@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var l_${1:VarName&amp;}${2:, }</string>
+	<key>name</key>
+	<string>var in parameters</string>
+	<key>scope</key>
+	<string>variable.parameter.function.epm, punctuation.definition.parameters.end.epm</string>
+	<key>tabTrigger</key>
+	<string>var</string>
+	<key>uuid</key>
+	<string>0EE8BA2A-D6FE-4329-AB0F-69F1FA615D05</string>
+</dict>
+</plist>

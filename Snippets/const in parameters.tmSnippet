@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>const c_${1:ConstName&amp;}${2:, }</string>
+	<key>name</key>
+	<string>const in parameters</string>
+	<key>scope</key>
+	<string>variable.parameter.function.epm, punctuation.definition.parameters.end.epm</string>
+	<key>tabTrigger</key>
+	<string>const</string>
+	<key>uuid</key>
+	<string>98762C02-C5CF-4E4D-A14A-A38AE1D5920F</string>
+</dict>
+</plist>
