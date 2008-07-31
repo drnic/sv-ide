@@ -1,0 +1,17 @@
+fT2_CMN_Rounding_Lookup-1:
+  name: fT2_CMN_Rounding_Lookup?{}
+  signature: fT2_CMN_Rounding_Lookup?{}()
+  interface: 1
+fTT_RAT_ChgMethod-1:
+  name: fTT_RAT_ChgMethod#
+  signature: fTT_RAT_ChgMethod#(const c_ChargeMethod&)
+  parameters:
+    - c_ChargeMethod&
+  interface: 1
+ReferenceCodeByLabel-1:
+  name: ReferenceCodeByLabel&
+  signature: ReferenceCodeByLabel&(const c_Code$, const c_Reference$)
+  parameters:
+    - c_Code$
+    - c_Reference$
+  interface: 1
