@@ -8,7 +8,7 @@
 #   File:       $1
 #   Created:    `date`
 #   Creator:    `#!/usr/bin/env ruby
-print ENV['SV_USER'] || ENV['USER'] || 'TODO'`
+print ENV['SV_USER'] || ENV['USER'] || 'TODO - add SV_USER environment variable'`
 #   \$Revision: \$
 #   \$Id: \$
 #
