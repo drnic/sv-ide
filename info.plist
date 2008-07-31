@@ -4,6 +4,13 @@
 <dict>
 	<key>name</key>
 	<string>EPM</string>
+	<key>ordering</key>
+	<array>
+		<string>17FD2959-D122-40E5-B2E8-7490BC0C8659</string>
+		<string>A9A79BAC-18A2-42C3-898E-13282AD6A4F2</string>
+		<string>22C0698D-1A4D-4443-9BD2-AE0DFDB775F0</string>
+		<string>5036AF97-29DF-4DA7-97F2-052D8FA1F8E2</string>
+	</array>
 	<key>uuid</key>
 	<string>AB4667F5-ECD6-4F09-89A2-3DE1B6A67ADD</string>
 </dict>
