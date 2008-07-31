@@ -1,7 +1,7 @@
 module TextMate
   module UI
     class << self
-      def request_item(options = Hash.new, &block)
+      def menu(options)
       end
     end
   end

@@ -6,7 +6,7 @@ require File.dirname(__FILE__) + '/../lib/function_defn'
 require "ui"
 
 class FunctionAutoComplete
-  def self.run(partial_word)
+  def run(partial_word)
     return partial_word unless function_list = FunctionDefn.find_by_partial(partial_word)
     function_name = function_list.first
     if function_list.length > 1
@@ -15,6 +15,7 @@ class FunctionAutoComplete
       function_name = function_name["title"]
     end
     function_interfaces_hash = FunctionDefn.find_by_name(function_name)
+    return partial_word unless function_interfaces_hash
     function_interfaces = function_interfaces_hash.values.sort { |a, b| a.interface <=> b.interface }
     function = function_interfaces.first
     if function_interfaces.length > 1
@@ -35,5 +36,5 @@ class FunctionAutoComplete
 end
 
 if $0 == __FILE__
-  print FunctionAutoComplete.run(ENV['TM_CURRENT_WORD'])
+  print FunctionAutoComplete.new.run(ENV['TM_CURRENT_WORD'])
 end
