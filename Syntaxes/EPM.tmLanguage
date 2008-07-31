@@ -11,7 +11,7 @@
 	<key>foldingStopMarker</key>
 	<string>^\s*\}</string>
 	<key>keyEquivalent</key>
-	<string>^~E</string>
+	<string>@</string>
 	<key>name</key>
 	<string>EPM</string>
 	<key>patterns</key>
@@ -92,7 +92,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(abort|debug|is_defined|print|to_integer|to_string)\b</string>
+			<string>\b(abort|debug|exists|is_defined|print|to_integer|to_string)\b</string>
 			<key>name</key>
 			<string>support.function.epm</string>
 		</dict>
@@ -119,6 +119,12 @@
 			<string>\bNULL\b</string>
 			<key>name</key>
 			<string>constant.language.null.epm</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>:=</string>
+			<key>name</key>
+			<string>keyword.operator.assignment.augmented.ruby</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
