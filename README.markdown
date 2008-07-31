@@ -12,3 +12,7 @@ Environment variables:
 
 * `SV_USER` or `USER` - e.g. drnic (your CB login)
 * `SV_ORGANIZATION_NAME` - e.g. Intec Billing Pty Ltd (the company that copyrights your source)
+
+## Windows
+
+* Need to test that Function Autocompletion works with TextMate::UI.menu - may need a downgrade option for E Text Editor
