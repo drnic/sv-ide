@@ -38,7 +38,7 @@
 #
 #---------------------------------------------------------------------------
 
-${1:fYourFunctionName&amp;}(${2:const c_MyParameter$}) =
+${1:fYourFunctionName&amp;}($0) =
 {
    return 1;
 }
