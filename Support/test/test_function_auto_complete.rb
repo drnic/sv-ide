@@ -8,17 +8,17 @@ class TestFunctionAutoComplete < Test::Unit::TestCase
       ENV['EPM_ENV'] = 'test' # uses fixtures instead of live access to SV
     end
     
-    context "for known partial with matches" do
+    context "for known partial with only 1 function interface and multiple parameters" do
       setup do
-        expected_items = %w[fTT_RAT_ChgMethod#]
+        expected_items = %w[ReferenceCodeByLabel&]
         TextMate::UI.expects(:request_item).
           with(:title => "Select function", :items => expected_items).
-          returns('fTT_RAT_ChgMethod#')
-        @result = FunctionAutoComplete.run("fTT_RAT")
+          returns('ReferenceCodeByLabel&')
+        @result = FunctionAutoComplete.run("Ref")
       end
 
       should "return one result" do
-        assert_equal("fTT_RAT_ChgMethod#", @result)
+        assert_equal('ReferenceCodeByLabel&(${1:c_Code\$}, ${2:c_Reference\$})', @result)
       end
     end
     
