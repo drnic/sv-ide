@@ -21,6 +21,8 @@
 				<!--<?php echo $wpdb->num_queries; ?> queries. <?php timer_stop(1); ?> seconds. --> <?php echo sprintf(__("<a href='http://www.templatesbrowser.com/wordpress-themes/' title='Wordpress Themes'>Theme</a> downloaded from <a href='http://www.templatesbrowser.com/' title='Website Templates'>Templates Browser</a>"), __("Powered by WordPress, state-of-the-art semantic personal publishing platform.")); ?>
  - 
 				<?php echo sprintf(__("<a href='http://www.itcouldbethisone.com' title='%s'>It could be this one</a>"), __("Cute, Fresh and Sweet themes to dress your wordpress")); ?>
+				
+				<a href="http://intecbilling.com/Intec/Products+Services/Products/Charging+and+Billing/Billing/" title="Intec Convergent Billing">SingleView</a> is a trademark of <a href="http://intecbilling.com/">Intec Telecom Systems</a>
 
 				</div> <!-- end credit -->
 	
