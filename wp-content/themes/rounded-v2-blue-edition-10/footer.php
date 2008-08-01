@@ -22,7 +22,7 @@
  - 
 				<?php echo sprintf(__("<a href='http://www.itcouldbethisone.com' title='%s'>It could be this one</a>"), __("Cute, Fresh and Sweet themes to dress your wordpress")); ?>
 				
-				<a href="http://intecbilling.com/Intec/Products+Services/Products/Charging+and+Billing/Billing/" title="Intec Convergent Billing">SingleView</a> is a trademark of <a href="http://intecbilling.com/">Intec Telecom Systems</a>
+				| <a href="http://intecbilling.com/Intec/Products+Services/Products/Charging+and+Billing/Billing/" title="Intec Convergent Billing">SingleView</a> is a trademark of <a href="http://intecbilling.com/">Intec Telecom Systems</a>
 
 				</div> <!-- end credit -->
 	
