@@ -35,6 +35,10 @@ fTT_DoSomething?{}() =
     should "find name" do
       assert_equal("fTT_DoSomething?{}", parser.name)
     end
+    
+    should "have no paramters" do
+      assert_equal([], parser.parameters)
+    end
   end
   
   

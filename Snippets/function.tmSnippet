@@ -52,7 +52,7 @@ ${1:fYourFunctionName&amp;}($0) =
 	<key>scope</key>
 	<string>source.epm</string>
 	<key>tabTrigger</key>
-	<string>funct</string>
+	<string>func</string>
 	<key>uuid</key>
 	<string>9F45DCB1-DDFB-4426-839C-D5D3AB8763D9</string>
 </dict>
