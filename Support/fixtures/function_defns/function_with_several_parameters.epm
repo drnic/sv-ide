@@ -33,7 +33,7 @@
 #
 #---------------------------------------------------------------------------
 
-fYourFunctionName&(const c_ConstName&, var l_VarName&) =
+fYourFunctionName&(const c_ConstName&, var l_VarName&, const c_SomeDates~[], const c_Hash#{}) =
 {
   return 1;
 }

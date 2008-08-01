@@ -45,7 +45,8 @@ class ParameterComments
       "#   None\n"
     else
       parameters.map do |param|
-        if line = existing_comment_lines.find { |line| line =~ /^#\s+#{param}\s+/ }
+        _param = param.gsub('[','\[').gsub(']','\]').gsub('{','\{').gsub('}','\{')
+        if line = existing_comment_lines.find { |line| line =~ /^#\s+#{_param}\s+/ }
           line
         else
           "#   #{param} - TODO\n"

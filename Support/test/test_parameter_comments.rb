@@ -15,11 +15,13 @@ class TestParameterComments < Test::Unit::TestCase
       assert_equal("# PARAMETERS:", @result_lines[24])
       assert_equal("#   c_ConstName& - TODO", @result_lines[25])
       assert_equal("#   l_VarName& - TODO", @result_lines[26])
-      assert_equal("#", @result_lines[27])
+      assert_equal("#   c_SomeDates~[] - TODO", @result_lines[27])
+      assert_equal('#   c_Hash#{} - TODO', @result_lines[28])
+      assert_equal("#", @result_lines[29])
     end
     
     should "still have RETURNS section" do
-      assert_equal("# RETURNS:", @result_lines[28])
+      assert_equal("# RETURNS:", @result_lines[30])
     end
   end
   

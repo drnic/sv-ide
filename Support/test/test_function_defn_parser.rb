@@ -17,7 +17,7 @@ class TestFunctionDefnParser < Test::Unit::TestCase
     end
 
     should "find paramters" do
-      assert_equal(%w[c_ConstName& l_VarName&], parser.parameters)
+      assert_equal(["c_ConstName&", "l_VarName&", "c_SomeDates~[]", 'c_Hash#{}'], parser.parameters)
     end
   end
   
@@ -40,6 +40,5 @@ fTT_DoSomething?{}() =
       assert_equal([], parser.parameters)
     end
   end
-  
   
 end
