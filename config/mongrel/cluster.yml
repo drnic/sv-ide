@@ -1,0 +1,10 @@
+--- 
+user: mongrel_sv-ide
+group: app_sv-ide
+cwd: /opt/apps/sv-ide/current
+log_file: /opt/apps/sv-ide/shared/log/mongrel.log
+port: "8000"
+environment: production
+address: 127.0.0.1
+pid_file: /opt/apps/sv-ide/shared/pids/mongrel.pid
+servers: 2
