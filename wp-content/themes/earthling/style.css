@@ -1,0 +1,218 @@
+/*
+Theme Name: earthling
+Theme URI: http://www.headsetoptions.org/
+Description: A new WordPress template by <a href="http://www.headsetoptions.org">headsetoptions.org</a> based on a <a
+href="http://www.freecsstemplates.org/">Free CSS Templates</a> design!
+Version:
+Author: http://www.headsetoptions.org/
+*/
+   
+
+/* Standard element */
+
+
+
+
+a img{ border:none; }
+
+
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #311C00 url(images/img1.jpg);
+	text-align: justify;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #9B8767;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #E8D6B4;
+}
+
+h2, h3 {
+	margin: 0 0 20px 0;
+	padding: 0 0 10px 0;
+	background: url(images/img3.gif) repeat-x left bottom;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 17px;
+}
+
+p, ol, ul {
+	line-height: 160%;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+ul li {
+	padding: 2px 0 5px 0;
+	background: url(images/img4.gif) repeat-x;
+}
+
+ul li.first {
+	background: none;
+}
+
+a {
+	color: #D9C09A;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+strong {
+	color: #D9C09A;
+}
+
+.indent {
+	margin-top: 0;
+	margin-left: 130px;
+}
+
+.image {
+	float: left;
+	margin: 0;
+}
+
+#wrapper {
+	background: url(images/img2.jpg) repeat-x;
+}
+
+/* Header */
+
+#header {
+	width: 730px;
+	height: 250px;
+	margin: 0 auto;
+}
+
+#header * {
+	text-transform: lowercase;
+	color: #FFFFFF;
+}
+
+#header h1 {
+	float: left;
+	padding: 90px 0 0 0;
+	letter-spacing: -2px;
+	font-size: 36px;
+}
+
+#header h2 {
+	float: left;
+	padding: 110px 0 0 6px;
+	background: none;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#header h2 a {
+	text-decoration: none;
+}
+
+#header ul {
+	float: right;
+	margin: 0;
+	padding: 110px 0 0 0;
+	list-style: none;
+}
+
+#header li {
+	display: inline;
+}
+
+#header li a {
+	display: block;
+	float: left;
+	padding: 0 15px;
+	border-left: 1px solid #7DD2FA;
+}
+
+#header li.first a {
+	border: none;
+}
+
+/* Content */
+
+#content {
+	width: 730px;
+	margin: 0 auto;
+}
+
+#colOne {
+	float: left;
+	width: 500px;
+}
+
+#colTwo {
+	float: right;
+	width: 184px;
+}
+
+#colTwo h3 {
+	margin-top: 10px;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 730px;
+	margin: 20px auto;
+	padding: 20px 0;
+	background: url(images/img4.gif) repeat-x;
+}
+
+#footer p {
+	margin: 0;
+	padding: 0;
+	text-transform: lowercase;
+	text-align: center;
+}
+
+#commentform textarea 
+        {
+	width:350px;
+}
+
+blockquote{
+	margin-left:1em;
+	padding-left:1em;
+	border-left:3px solid #037CC5;
+	color:#D8BE98;
+}
+
+
+#flickr img {
+	display: block;
+	float: left;
+	padding: 0px;
+	position: relative;
+	height: 65px;
+	width: 65px;
+	border-width:0;
+	margin:2px;
+	}

@@ -1,0 +1,76 @@
+Install Instructions & Change Log
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+IMPORTANT: NO MATTER WHERE YOU DOWNLOAD THIS THEME FROM, FIRST CHANGE THE FOLDER CONTAINING THE THEME TO ONLY 
+
+"earthling" 
+
+NO VERSIONS NUMBERS OR OTHER EXTENSION, THANKS!!! 
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+- The ritecounter code can be deleted from the footer.php file  (leave it there if you don't mind)
+
+
+Install Info
+------------
+
+- Upload the theme folder into the theme folder. [ URL/wp-content/themes/ ]
+- Upload plugins files to the plugin folder. [ URL/ wp-content/plugins/ ]
+- Activate plugins
+- Activate theme
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+
+Theme Earthling
+--------------- 
+
+- Initial Release
+
+
+Optional: Creating a Side Blog
+------------------------------
+
+- Open index.php (or the file where you want you sideblog to appear) using WP or a text editor like Notepad
+
+Add this code:
+
+<ul>
+<?php sideblog('title=true&permalinks=false&limit=1'); ?><br>
+</ul>
+
+- Change the number in limit to the number of side blogs to display
+
+
+
+
+Changing Flickr to point to your images
+---------------------------------------
+
+- Open sidebar.php using WP or a text editor like notepad
+
+- Find the Flickr script
+
+- Change "tag=art" to "tag=your tag" "your tag" being your own unique tag
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+Plugins Used/required
+---------------------
+
+Get Recent Comments
+Sideblog
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+For additional instruction visit 
+
+http://www.headsetoptions.org 
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------

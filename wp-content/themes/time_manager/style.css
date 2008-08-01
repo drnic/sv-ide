@@ -1,0 +1,108 @@
+/*  
+Theme Name: TIME MANAGER
+Theme URI: http://www.anieto2k.com
+Description: Adaptación para Wordpress de <a href="http://www.templateworld.com/zero/click.php?id=10">TIME MANAGER</a>
+Version: 1.0
+Author: Andrés Nieto
+Author URI:  http://www.anieto2k.com
+*/
+
+/* CSS Document */
+body{background:url(images/main-bg.gif) 0 0 repeat-x #A8A39D; color:#1A1917; margin:84px 0 0; padding:0; font:14px/20px Arial, Helvetica, sans-serif;}
+div, p, h1, h2, h3, ul{padding:0px; margin:0px;}
+ul{list-style-type:none;}
+/*--TOP PANEL--*/
+#topPan{width:464px; height:398px; position:relative; margin:0 auto;}
+#topPan ul {width:464px;}
+#topPan ul li{float:left; font:12px/30px "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; text-transform:uppercase;}
+#topPan ul li a{width:92px; height:30px; display:block; background:url(images/menubg-normal.gif) 0 0 no-repeat #66605B; color:#FDFDFD;  text-decoration:none; text-align:center;}
+#topPan ul li a:hover{background:url(images/menubg-hover.gif) 0 0 no-repeat #66605B; color:#1A1917;}
+#topPan ul li.menupadding{margin:0 0 0 1px;}
+#topPan ul li.home{width:92px; height:30px; display:block; background:url(images/menubg-hover.gif) 0 0 no-repeat #FDFDFD; color:#1A1917; text-align:center;}
+
+#topPan h1{display:block; width:464px; height:198px; background:url(images/header.jpg) 0 0 no-repeat; text-indent:-2000px; margin:0; clear:both;}
+
+#toplinkPan{width:464px; height:159px; position:relative; margin:0 auto;}
+#toplinkfastPan{width:148px; height:140px; float:left; background:url(images/blog-normal.jpg) 0 0 no-repeat #5B5550; margin:8px 0 0; color:#fff;}
+#toplinkfastPan a{text-decoration:none; display:block; width:148px; height:140px;}
+#toplinkfastPan a:hover{text-decoration:none; background:url(images/blog-hover.jpg) 0 0 no-repeat;}
+#toplinkfastPan p{display:block; width:90px; height:15px; position:absolute; top:0px; left:0px; font:12px/14px "Trebuchet MS", Arial, Helvetica, sans-serif; margin:54px 0 0 21px;}
+
+#toplinksecondPan{width:148px; height:140px; float:left; background:url(images/chat-normal.jpg) 0 0 no-repeat #5B5550; margin:8px 10px 0; color:#fff;}
+#toplinksecondPan a{text-decoration:none; display:block; width:148px; height:140px;}
+#toplinksecondPan a:hover{text-decoration:none; background:url(images/chat-hover.jpg) 0 0 no-repeat;}
+#toplinksecondPan p{display:block; width:90px; height:15px; position:absolute; top:0px; left:157px; font:12px/14px "Trebuchet MS", Arial, Helvetica, sans-serif; margin:54px 0 0 21px; }
+
+#toplinkthirdPan{width:148px; height:140px; float:left; background:url(images/tools-normal.jpg) 0 0 no-repeat #5B5550; margin:8px 0 0; color:#fff;}
+#toplinkthirdPan a{text-decoration:none; display:block; width:148px; height:140px;}
+#toplinkthirdPan a:hover{text-decoration:none; background:url(images/tools-hover.jpg) 0 0 no-repeat;}
+#toplinkthirdPan p{display:block; width:90px; height:15px; position:absolute; top:0px; right:34px; font:12px/14px "Trebuchet MS", Arial, Helvetica, sans-serif; margin:54px 0 0 21px; }
+
+
+/*--/TOP PANEL--*/
+/*--BODY PANEL--*/
+#bodyPan{width:352px; background:url(images/bodytopbg.jpg) 0 0 no-repeat #fff; color:#1A1917; position:relative; margin:0 auto; padding:0 56px;}
+#bodyPan h1{width:352px; height:32px; display:block; background:url(images/welcomebg.gif) 0 100% repeat-x; font:28px/26px Georgia, "Times New Roman", Times, serif; padding:42px 0 0;}
+#bodyPan h1 span{background:#F9F9F9; color:#9A0000; font-size:26px;}
+#bodyPan h2{width:350px; height:32px; display:block; background:url(images/dotline.gif) 0 100% repeat-x #fff; font:28px/26px Georgia, "Times New Roman", Times, serif; padding:42px 0 0; color:#9A0000;}
+
+#bodyPan p{padding:18px 0 0 0;}
+#bodyPan p.bigtext{background:#fff; font-size:18px; color:#B3A7A0; font-weight:bold; padding:18px 0 0;}
+#bodyPan p.more{width:89px; height:39px;}
+#bodyPan p.more a{display:block; width:89px; height:39px; background:url(images/more1.jpg) 0 0 no-repeat #FBFBFB; color:#fff;  font:14px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; text-transform:uppercase; text-decoration:none; margin:0 0 0 262px; text-align:center;}
+#bodyPan p.more a:hover{text-decoration:none; background:url(images/more2.jpg) 0 0 no-repeat;}
+#bodyPan p.morenext{width:89px; height:60px; right:0px; top:0px; clear:both;}
+#bodyPan p.morenext a{display:block; width:89px; height:39px; background:url(images/more2.jpg) 0 0 no-repeat #FBFBFB; color:#fff;  font:14px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; text-transform:uppercase; text-decoration:none; margin:0 0 0 262px; text-align:center;}
+#bodyPan p.morenext a:hover{text-decoration:none; background:url(images/more1.jpg) 0 0 no-repeat;}
+
+#bodybottomPan{width:464px; height:42px; background:url(images/bodybottombg.jpg) 0 0 no-repeat; position:relative; margin:0 auto; clear:both; }
+
+#bodyPan ul{width:352px; margin:20px 0 0;}
+#bodyPan ul li{background:url(images/arrow.jpg) 0 4px no-repeat; padding:0 0 0 20px;}
+#bodyPan ul li a{background:#fff; color:#9A0000; text-decoration:none;}
+#bodyPan ul li a:hover{text-decoration:underline;}
+
+.text {display:block; margin-bottom:10px;}
+#bodyPan form{width:350px; background:url(images/formarea.jpg) 0 100% no-repeat; padding:0px; margin:30px 0 0;}
+#bodyPan form h2{display:block; width:310px; height:45px; background:url(images/formtop.gif) 0 0 no-repeat #F9F9F9; color:#fff; font:20px/39px Georgia, "Times New Roman", Times, serif; margin:0; padding:0 0 0 40px;}
+#bodyPan form p{ text-align:center;}
+#bodyPan form input{ height:18px; margin:0 0 10px 0px;}
+#bodyPan form input.paddingtop{margin-top:16px;}
+#bodyPan form input.button{width:54px; height:25px; display:block; background:url(images/button.gif) 0 0 no-repeat #EBEBEB; border:none; color:#fff;  font:14px/25px "Trebuchet MS", Arial, Helvetica, sans-serif; text-transform:uppercase; margin:0 0 0 262px; text-align:center;}
+#bodyPan form textarea {width:90%; margin:0 5%; height:5em;}
+#bodyPan form input[type="submit"]{width:90%; margin:0 5%;}
+
+/*--/BODY PANEL--*/
+/*--FOOTER PANEL--*/
+#footermainPan{height:155px; background: url(images/footerbg.gif) 0 0 repeat-x #000; color:#fff; margin:43px 0 0; padding:51px 0 0;}
+#footerPan{width:330px; height:90px; display:block; position:relative; margin:0 auto;}
+#footerPan p{padding:51px 0 0;}
+#footerPan p span{background:#1C1B19; color:#AC2626; font-size:10px;}
+#footerPan p.copyright{ background:#1F1D1B; margin:0; display:block; position:absolute; bottom:0px; color:#fff; font:11px/15px Tahoma,Arial, Helvetica, sans-serif; padding:0;}
+
+#footerPan ul{width:330px; display:block; position:absolute; left:0px; top:0; padding:0; }
+#footerPan li{border-right:1px #ccc solid;float:left; font:12px/15px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:normal;padding-right:5px;}
+#footerPan ul li a{padding:0 0 0 12px; color:#fff; background:#181716; text-decoration:none;}
+#footerPan ul li a:hover{text-decoration:underline;}
+
+#footerPan ul.info{width:330px; height:45px; display:block; position:absolute; left:0px; top:29px; padding:0;}
+#footerPan ul.info li{display:block; width:109px;}
+#footerPan ul.info li.address{width:97px; background:url(images/vertical-dot.gif) 100% 0 repeat-y #1C1B19; color:#7B746B; font-size:10px; font-weight:bold; padding:0 0 0 12px;}
+#footerPan ul.info li.phone{width:94px; background:url(images/vertical-dot.gif) 100% 0 repeat-y #1C1B19; color:#7B746B; font-size:10px; padding:0 0 0 15px; font-weight:bold;}
+#footerPan ul.info li.fax{width:94px; background:#1C1B19; color:#7B746B; font-size:10px; padding:0 0 0 15px; font-weight:bold;}
+#footerPan ul li span{background:#1C1B19; color:#AC2626; font-size:10px; font-weight:bold; line-height:14px;}
+
+#footerPan ul.templateworld{width:458px; background:#1C1B19; color:#fff; display:block; position:absolute; top:97px; }
+#footerPan ul.templateworld li a{background:#1C1B19; color:#fff; text-decoration:none;}
+#footerPan ul.templateworld li a:hover{text-decoration:underline;}
+
+.bigtext span a{ color:#ccc; text-decoration:none; font-size:2em; padding-left:100px; margin:10px;}
+
+.alt {background-color:#efefef;}
+#ajax_comments {display:block;}
+#ajax_comments dt { border-bottom:1px dotted #ccc;}
+#ajax_comments dt span a{font-size:0.5em;text-decoration:none;color:#999;}
+#ajax_comments dd {margin-left:-0px;}
+
+.alignleft{ background:url(images/left.jpg) no-repeat; padding-left:20px;}
+.alignright{ background:url(images/arrow.jpg) no-repeat; padding-left:20px;}
