@@ -17,7 +17,7 @@ class FunctionDefnParser
   end
   
   def parse_function_signature(line)
-    if line =~ /([\w_]+[$&#~?]?)\((.*)\)\s*=/
+    if line =~ /([\w_]+[$&#~@?]?(?:\{\}|\[\])?)\((.*)\)\s*=/
       @name, parameter_str = $1, $2
       @parameters = parameter_str.split(/\s*,\s*/).map { |param_str| param_str.split.last }
     end

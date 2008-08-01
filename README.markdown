@@ -16,3 +16,12 @@ Environment variables:
 ## Windows
 
 * Need to test that Function Autocompletion works with TextMate::UI.menu - may need a downgrade option for E Text Editor
+
+## Ideas
+
+* In function comment headers add a REMOTE: block to describe the remote settings of a function, if applicable. Allow this block to be generated for pre-existing functions
+* Function name helper - a widget to help with function name namespacing (see Developers Guide)
+* Function search
+* Function tagging (useful for search) - use atlanta_group?
+* Validate EPM
+* Reformat EPM

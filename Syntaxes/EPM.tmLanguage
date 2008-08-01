@@ -43,7 +43,7 @@
 			<key>comment</key>
 			<string>match regular function like: fTT_RAT_ChgMethod#(const c_ChargeMethod&amp;) =</string>
 			<key>match</key>
-			<string>^([a-zA-Z_$]\w*(?:[$&amp;#~?]?(?:{}|\[\])?))(\()(.*?)(\))\s+=\s*{?$</string>
+			<string>^([a-zA-Z_$]\w*(?:[$&amp;#~@?]?(?:{}|\[\])?))(\()(.*?)(\))\s+=\s*{?$</string>
 			<key>name</key>
 			<string>meta.function.epm</string>
 		</dict>

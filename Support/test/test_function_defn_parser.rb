@@ -21,4 +21,21 @@ class TestFunctionDefnParser < Test::Unit::TestCase
     end
   end
   
+  context "function with complex return type" do
+    setup do
+      function = <<-LINES
+fTT_DoSomething?{}() = 
+{
+  return 1;
+}
+      LINES
+      @parser = FunctionDefnParser.new(function.split("\n"))
+    end
+
+    should "find name" do
+      assert_equal("fTT_DoSomething?{}", parser.name)
+    end
+  end
+  
+  
 end
