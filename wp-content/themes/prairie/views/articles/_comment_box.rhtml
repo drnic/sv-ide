@@ -1,0 +1,31 @@
+
+
+
+<div id="comment-form">
+
+ <div id="errors"></div>
+  <div id="preview" style="display: none"></div>
+  <div class="clear"></div>
+
+<%= form_remote_tag :url => {:action => "comment", :id => @article}, 
+                    :position=> :bottom, 
+                    :update => {:success => 'commentList'},
+                    :loading => "loading()", 
+                    :complete => "complete(request)",
+                    :failure => "failure(request)",
+                    :html => {:id=>"commentform",:class=>"commentform"} %>
+                    
+  
+	<h3 class="formhead">Have your say</h3>
+	<p>A name is required. You may use HTML in your comments.</p>
+	<%= text_field "comment", "author", :class => "textfield" %><label class="text">Name</label><br />
+	<%= text_field "comment", "email", :class => "textfield" %><label class="text">Email</label><br />
+	<%= text_field "comment", "url", :class => "textfield" %><label class="text">Website</label><br />
+	<%= text_area "comment", "body", :class=> "commentbox" %>
+	<div class="formactions">
+		<a href="#" onclick="new Ajax.Updater('preview', '<%= url_for :action => 'comment_preview' %>',  {asynchronous:true, evalScripts:true, parameters:Form.serialize('commentform'), onComplete:function(request){$('preview').style.display = 'block'}}); return false;">Preview comment</a>
+		<span id="comment_loading" style="display:none;"><img src="/images/theme/spinner.gif" alt="Loading..." class="spinner"/></span>
+		<input type="submit" name="submit" id="form-submit-button" value="Add your comment" class="submit" />
+	</div>
+	<%= end_form_tag %>
+</div>

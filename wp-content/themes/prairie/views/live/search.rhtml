@@ -1,0 +1,16 @@
+<% if !@search.to_s.blank? -%>
+  <h3>Searched for <em>&ldquo;<%=h @search %>&rdquo;</em></h3>
+  <small><a href="#" onclick="new Element.hide('search-results')">Close these results</a></small>
+  <% if @articles.to_a.empty? %>
+  	<p>No results were found.</p>
+  <% else %>
+  <ul>
+  <% for article in @articles.to_a -%>
+    <li><%= article_link article.title, article %></li>
+  <% end -%>
+	</ul>
+	<% end %>
+	<small><a href="#" onclick="new Element.hide('search-results')">Close these results</a></small>
+<% else %>
+  &nbsp;
+<% end -%>

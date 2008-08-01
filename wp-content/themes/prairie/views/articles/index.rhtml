@@ -1,0 +1,27 @@
+<div id="primary" class="twocol-stories">
+	<div class="inside">
+		<% i = 1 %>
+		<% for article in @articles -%>
+		<% 
+		responses = article.trackbacks.size + article.comments.size
+		responses = 'no' if responses == 0
+		%>
+					<div class="story<%= ' first' if i == 1 %>">
+						<h3><%= article_link article.title, article %></h3>
+						<%= article.body_html %>
+						<div class="details">
+							Posted at <%= article.created_at.strftime("%I").to_i.to_s + article.created_at.strftime("%p").downcase + article.created_at.strftime(" on %m/%d/%y") %> | <%= category_links article %> | <%= responses %> responses | <span class="read-on"><%= article_link 'read on', article %></span>
+						</div>
+					</div>
+					<%= '<div class="clear"></div>' if i == 2 %>
+					<% if i == 2; i = 1; else i = 2; end %>
+		<% end -%>
+		
+		<div class="clear"></div>
+		<% unless @pages.item_count <= config[:limit_article_display] %>
+		  <p id="pagination">Older posts: <%= pagination_links @pages, :params => { :action => @controller.action_name } %></p>
+		<% end -%>
+		
+	</div>
+	<div class="clear"></div>
+</div>

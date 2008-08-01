@@ -1,0 +1,14 @@
+<li id="trackback-<%= trackback.id %>"<%= onhover_show_admin_tools(:trackback, trackback.id) %> class="pingback">
+  <a name="trackback-<%= trackback.id %>"></a>
+  <cite>
+		<span class="author"><a href="<%= trackback.url %>" rel="nofollow">Trackback</a></span>
+		<span class="date"><%= trackback.created_at.strftime("%I").to_i.to_s + trackback.created_at.strftime("%p").downcase + trackback.created_at.strftime(" on %m/%d/%y") %></span>
+		<span class="admin-tools"><%= admin_tools_for trackback %></span>
+	</cite>
+	<div class="content">
+		<h3><a href="<%= trackback.url %>" rel="nofollow"><%= trackback.title %></a></h3>
+		<p><%= trackback.excerpt %></p>
+		<p><a href="<%= trackback.url %>" rel="nofollow">Posted on <%= trackback.blog_name %></a></p>
+	</div>
+  <div class="clear"></div>
+</li>

@@ -1,0 +1,16 @@
+<% unless @archives.blank? %>
+<h3>Archives</h3>
+<ul class="counts">
+  <% @archives.each do |month| %>
+    <li>
+    	<%
+    	link = String.new
+    	link << '<span class="count">' + month[:count].to_s + '</span>' if @sb_config['show_count']
+    	link << month[:name]
+    	%>
+    	
+      <%= link_to link, :controller => "articles", :action => "find_by_date", :year => month[:year], :month => month[:month] %>
+    </li>
+  <% end %>
+</ul>
+<% end %>

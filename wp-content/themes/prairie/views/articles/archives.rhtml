@@ -1,0 +1,52 @@
+<div id="primary" class="single-post">
+	<div class="inside">
+		<div class="primary">
+		<h1>Browse the Archives</h3>
+		<% if @articles.to_a.empty? -%>
+		<p>No articles found...</p>
+		<% else
+		%>
+		
+		<p>Below is a summary of all of the posts at <%=h config_value(:blog_name) %>.</p>
+		<%
+				first = true
+		     currentmonth = 0
+		     currentyear = 0 
+		     for article in @articles 
+		       if (article.created_at.month != currentmonth || article.created_at.year != currentyear) 
+		       	 currentmonth = article.created_at.month
+		       	 currentyear = article.created_at.year -%>
+		       	 <%= '</ul>' if !first %>
+		       	 <% first = false %>
+		       	  <h2><%= Date::MONTHNAMES[article.created_at.month] %> <%= article.created_at.year %></h2>
+		       	  <ul class="dates">
+		 	   <% end -%>
+		 	<li>
+		 	<span class="date"><%= article.created_at.month%>.<%= article.created_at.mday %></span>
+		  <%= article_link article.title, article %> 
+		  <% if !article.categories.empty? %> posted in 
+		  <%= article.categories.collect {|c| link_to c.name, :controller=>"articles", :action=>"category", :id=>c.name }.join(", ") -%>
+		  <% end -%>
+		  </li>
+		<% end -%>
+		</ul>
+		<%
+		  end -%>
+	</div>
+	<div class="secondary">
+		<h2>About the archives</h2>
+		<div class="featured">
+			<p>While you're here, here's some other info about these archives.</p>
+			<dl>
+				<dt>Total entries:</dt>
+				<dd><%= @articles.size %></dd>
+			</dl>
+			<dl>
+				<dt>Total comments:</dt>
+				<dd><%= Comment.find(:all).size %></dt>
+			</dl>
+		</div>
+	</div>
+	<div class="clear"></div>
+  </div>
+</div>
