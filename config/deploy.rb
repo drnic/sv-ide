@@ -18,10 +18,11 @@ set :deploy_to, "/opt/apps/#{application}"
 # your SCM below:
 set :scm, :git
 set :repository,  "git@github.com:drnic/sv-ide.git"
+ssh_options[:forward_agent] = true
 
 # set :ssh_options, { :forward_agent => true }
 
-set :branch, "master"
+set :branch, "website"
 
 # create a symlink to where I store all my images on
 # the server.
