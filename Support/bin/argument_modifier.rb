@@ -46,12 +46,8 @@ class ArgumentModifier
     @argument_no = before_arguments.gsub(/[^,]/, '').length + 1
     return unless @is_argument = (after =~ /^([^)]*)\)/)
     @arg_start_index, @arg_end_index = line_index, line_index
-    until line[@arg_start_index-1..@arg_start_index-1] =~ /[(,]/
-      @arg_start_index -= 1
-    end
-    until line[@arg_end_index..@arg_end_index] =~ /[),]/
-      @arg_end_index += 1
-    end
+    @arg_start_index -= 1 until line[@arg_start_index-1..@arg_start_index-1] =~ /[(,]/
+    @arg_end_index += 1 until line[@arg_end_index..@arg_end_index] =~ /[),]/
   end
   
   def clean_document_lines
