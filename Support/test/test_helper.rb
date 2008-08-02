@@ -16,3 +16,5 @@ class Test::Unit::TestCase
     File.dirname(__FILE__) + "/../fixtures"
   end
 end
+
+Context = Thoughtbot::Shoulda::Context

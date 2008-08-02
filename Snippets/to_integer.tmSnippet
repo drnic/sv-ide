@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>to_integer($1)</string>
+	<string>to_integer($0)</string>
 	<key>name</key>
 	<string>to_integer</string>
 	<key>scope</key>
