@@ -13,6 +13,12 @@ class Context
       assert_equal(num, @arg_auto.argument_no)
     end
   end
+  
+  def should_be_for_function(function_name)
+    should "be for function #{function_name}" do
+      assert_equal(function_name, @arg_auto.function_name)
+    end
+  end
 end
 class TestArgumentAutoComplete < Test::Unit::TestCase
   attr_reader :line, :line_index
@@ -27,7 +33,7 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
     context "with cursor before parentheses" do
       setup do
         @line_index = 62
-        @arg_auto = ArgumentAutoComplete.new('ReferenceCodeByLabel', line, line_index)
+        @arg_auto = ArgumentAutoComplete.new(line, line_index)
       end
       
       should "be invalid to autocomplete" do
@@ -35,16 +41,18 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
       end
       
       should_be_argument -1
+      should_be_for_function nil
     end
     
     context "with cursor just inside parentheses" do
       setup do
         @line_index = 64
-        @arg_auto = ArgumentAutoComplete.new('ReferenceCodeByLabel', line, line_index)
+        @arg_auto = ArgumentAutoComplete.new(line, line_index)
       end
 
       should_be_valid_to_autocomplete
       should_be_argument 1
+      should_be_for_function 'ReferenceCodeByLabel&'
 
       should "replace argument with XXX" do
         @arg_auto.replace_argument('XXX')
@@ -58,11 +66,12 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_00000000
     context "with cursor inside 1st argument string" do
       setup do
         @line_index = 67
-        @arg_auto = ArgumentAutoComplete.new('ReferenceCodeByLabel', line, line_index)
+        @arg_auto = ArgumentAutoComplete.new(line, line_index)
       end
 
       should_be_valid_to_autocomplete
       should_be_argument 1
+      should_be_for_function 'ReferenceCodeByLabel&'
       
       should "replace argument with XXX" do
         @arg_auto.replace_argument('XXX')
