@@ -25,6 +25,13 @@ class ArgumentModifier
     lines.join("\n") + "\n"
   end
   
+  def arguments
+    @arguments ||= begin
+      argument_str = @before_arguments + @after_arguments
+      argument_str.split(/,\s+/)
+    end
+  end
+  
   def replace_argument(new_value)
     return self unless @arg_start_index && @arg_end_index
     value = ((argument_no == 1) ? '' : ' ') + new_value
@@ -42,9 +49,10 @@ class ArgumentModifier
     before, after = line[0..line_index-1], line[line_index..-1]
     @argument_no = -1
     return unless @is_argument = (before =~ /\b([\w_]+[$&#~@?](?:\{\}|\[\])?)\(([^)]*)$/)
-    @function_name, before_arguments = $1, $2
-    @argument_no = before_arguments.gsub(/[^,]/, '').length + 1
+    @function_name, @before_arguments = $1, $2
+    @argument_no = @before_arguments.gsub(/[^,]/, '').length + 1
     return unless @is_argument = (after =~ /^([^)]*)\)/)
+    @after_arguments = $1
     @arg_start_index, @arg_end_index = line_index, line_index
     @arg_start_index -= 1 until line[@arg_start_index-1..@arg_start_index-1] =~ /[(,]/
     @arg_end_index += 1 until line[@arg_end_index..@arg_end_index] =~ /[),]/

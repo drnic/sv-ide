@@ -29,6 +29,21 @@ class TestArgumentModifier < Test::Unit::TestCase
 const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_CODE', '00_000000001'));
       LINE
     end
+    
+    context "looking for arguments" do
+      setup do
+        @arg_auto = ArgumentModifier.new([line], 1, 68)
+      end
+
+      should "find first argument" do
+        assert_equal("'T2_CC_RETAILER_CODE'", @arg_auto.arguments[0])
+      end
+      
+      should "find second argument" do
+        assert_equal("'00_000000001'", @arg_auto.arguments[1])
+      end
+    end
+    
 
     context "with cursor before parentheses" do
       setup do
