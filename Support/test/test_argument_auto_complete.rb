@@ -32,8 +32,7 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
 
     context "with cursor before parentheses" do
       setup do
-        @line_index = 62
-        @arg_auto = ArgumentAutoComplete.new(line, line_index)
+        @arg_auto = ArgumentAutoComplete.new([line], 1, 62)
       end
       
       should "be invalid to autocomplete" do
@@ -46,8 +45,7 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
     
     context "with cursor just inside parentheses" do
       setup do
-        @line_index = 64
-        @arg_auto = ArgumentAutoComplete.new(line, line_index)
+        @arg_auto = ArgumentAutoComplete.new([line], 1, 64)
       end
 
       should_be_valid_to_autocomplete
@@ -60,13 +58,13 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
 const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_000000001'));
         LINE
         assert_equal(expected_line.strip, @arg_auto.line)
+        assert_equal(expected_line, @arg_auto.document)
       end
     end
     
     context "with cursor inside 1st argument string" do
       setup do
-        @line_index = 67
-        @arg_auto = ArgumentAutoComplete.new(line, line_index)
+        @arg_auto = ArgumentAutoComplete.new([line], 1, 67)
       end
 
       should_be_valid_to_autocomplete
@@ -79,6 +77,7 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_00000000
 const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_000000001'));
         LINE
         assert_equal(expected_line.strip, @arg_auto.line)
+        assert_equal(expected_line, @arg_auto.document)
       end
 
       should "replace argument with an EPM string" do
@@ -87,9 +86,40 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_00000000
 const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('XXX', '00_000000001'));
         LINE
         assert_equal(expected_line.strip, @arg_auto.line)
+        assert_equal(expected_line, @arg_auto.document, "document not created correctly")
       end
     end
     
+  end
+  
+  context "multi-line document" do
+    setup do
+      @document = <<-LINE.strip
+fSomeFunction&() =
+{
+  const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_CODE', '00_000000001'));
+  return 0;
+}
+      LINE
+    end
+
+    context "with cursor inside 1st argument string" do
+      setup do
+        @arg_auto = ArgumentAutoComplete.new(@document.split("\n"), 3, 69)
+      end
+
+      should "replace argument with an EPM string" do
+        @arg_auto.replace_argument_with_string('XXX')
+        expected_document = <<-LINE
+fSomeFunction&() =
+{
+  const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('XXX', '00_000000001'));
+  return 0;
+}
+        LINE
+        assert_equal(expected_document, @arg_auto.document)
+      end
+    end
   end
   
 end

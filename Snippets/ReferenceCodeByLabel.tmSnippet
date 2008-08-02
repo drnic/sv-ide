@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>ReferenceCodeByLabel&amp;(${1:'${2:ReferenceTypeName}'}, ${5:'${6:Label}'})</string>
+	<key>name</key>
+	<string>ReferenceCodeByLabel</string>
+	<key>scope</key>
+	<string>source.epm</string>
+	<key>tabTrigger</key>
+	<string>rcl</string>
+	<key>uuid</key>
+	<string>DD8E2630-8514-4131-B27D-F85397ABFC37</string>
+</dict>
+</plist>
