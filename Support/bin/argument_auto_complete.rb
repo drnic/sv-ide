@@ -3,7 +3,7 @@ class ArgumentAutoComplete
   attr_reader :function_name, :argument_no, :line
 
   def initialize(document_lines, line_num, line_index)
-    @document_lines, @line_num, @line_index = document_lines, line_num, line_index
+    @document_lines, @line_num, @line_index = document_lines, line_num, (line_index-1)
     @original_line = line
     clean_document_lines
     parse
@@ -26,6 +26,7 @@ class ArgumentAutoComplete
   end
   
   def replace_argument(new_value)
+    return self unless @arg_start_index && @arg_end_index
     value = ((argument_no == 1) ? '' : ' ') + new_value
     @line = original_line[0..@arg_start_index-1] + 
       value + original_line[@arg_end_index..-1]
@@ -34,7 +35,6 @@ class ArgumentAutoComplete
   
   def replace_argument_with_string(new_string)
     replace_argument("'#{new_string}'")
-    self
   end
   
   protected
@@ -43,8 +43,8 @@ class ArgumentAutoComplete
     @argument_no = -1
     return unless @is_argument = (before =~ /\b([\w_]+[$&#~@?](?:\{\}|\[\])?)\(([^)]*)$/)
     @function_name, before_arguments = $1, $2
-    @argument_no = before_arguments.split(/,/).length
-    return unless @is_argument = (after =~ /^([^)]+)\)/)
+    @argument_no = before_arguments.gsub(/[^,]/, '').length + 1
+    return unless @is_argument = (after =~ /^([^)]*)\)/)
     @arg_start_index, @arg_end_index = line_index, line_index
     until line[@arg_start_index-1..@arg_start_index-1] =~ /[(,]/
       @arg_start_index -= 1
@@ -60,5 +60,8 @@ class ArgumentAutoComplete
 end
 
 if $0 == __FILE__
-  print ArgumentAutoComplete.new(STDIN.readlines, ENV["TM_LINE_NUMBER"].to_i, ENV["TM_LINE_INDEX"].to_i).replace_argument_with_string('XXX').document
+  arg_auto = ArgumentAutoComplete.new(STDIN.readlines, ENV["TM_LINE_NUMBER"].to_i, ENV["TM_LINE_INDEX"].to_i)
+  arg_auto.replace_argument_with_string('XXX')
+  print arg_auto.document
+  `open txmt://open?line=#{ENV["TM_LINE_NUMBER"]}&column=#{ENV["TM_LINE_INDEX"]}`
 end

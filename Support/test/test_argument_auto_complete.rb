@@ -109,6 +109,25 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
       end
     end
 
+    context "with cursor just inside final parameter" do
+      setup do
+        @arg_auto = ArgumentAutoComplete.new([line], 1, 101)
+      end
+
+      should_be_valid_to_autocomplete
+      should_be_argument 2
+      should_be_for_function 'ReferenceCodeByLabel&'
+
+      should "replace 2nd argument with XXX" do
+        @arg_auto.replace_argument('XXX')
+        expected_line = <<-LINE
+const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_CODE', XXX));
+        LINE
+        assert_equal(expected_line.strip, @arg_auto.line)
+        assert_equal(expected_line, @arg_auto.document)
+      end
+    end
+
     
   end
   
