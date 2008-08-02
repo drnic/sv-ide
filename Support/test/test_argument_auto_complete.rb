@@ -45,6 +45,14 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
 
       should_be_valid_to_autocomplete
       should_be_argument 1
+
+      should "replace argument with 'XXX'" do
+        @arg_auto.replace_argument('XXX')
+        expected_line = <<-LINE
+const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_000000001'));
+        LINE
+        assert_equal(expected_line.strip, @arg_auto.line)
+      end
     end
     
     context "with cursor inside 1st argument string" do
@@ -55,6 +63,14 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
 
       should_be_valid_to_autocomplete
       should_be_argument 1
+      
+      should "replace argument with 'XXX'" do
+        @arg_auto.replace_argument('XXX')
+        expected_line = <<-LINE
+const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_000000001'));
+        LINE
+        assert_equal(expected_line.strip, @arg_auto.line)
+      end
     end
     
   end
