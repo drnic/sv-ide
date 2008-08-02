@@ -17,8 +17,6 @@ line, column = doc.split(",")
 	<string>word</string>
 	<key>input</key>
 	<string>none</string>
-	<key>keyEquivalent</key>
-	<string>^~@t</string>
 	<key>name</key>
 	<string>Restore Cursor Position</string>
 	<key>output</key>

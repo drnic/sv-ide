@@ -18,8 +18,6 @@ end</string>
 	<string>word</string>
 	<key>input</key>
 	<string>none</string>
-	<key>keyEquivalent</key>
-	<string>^~@t</string>
 	<key>name</key>
 	<string>Store Cursor Position</string>
 	<key>output</key>

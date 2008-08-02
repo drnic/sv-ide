@@ -1,5 +1,5 @@
 require File.dirname(__FILE__) + "/test_helper"
-require "argument_auto_complete"
+require "argument_modifier"
 
 class Context
   def should_be_valid_to_autocomplete
@@ -20,7 +20,7 @@ class Context
     end
   end
 end
-class TestArgumentAutoComplete < Test::Unit::TestCase
+class TestArgumentModifier < Test::Unit::TestCase
   attr_reader :line, :line_index
   
   context "inside ReferenceCodeByLabel& call" do
@@ -32,7 +32,7 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
 
     context "with cursor before parentheses" do
       setup do
-        @arg_auto = ArgumentAutoComplete.new([line], 1, 62)
+        @arg_auto = ArgumentModifier.new([line], 1, 62)
       end
       
       should "be invalid to autocomplete" do
@@ -45,7 +45,7 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
     
     context "with cursor just inside parentheses" do
       setup do
-        @arg_auto = ArgumentAutoComplete.new([line], 1, 64)
+        @arg_auto = ArgumentModifier.new([line], 1, 64)
       end
 
       should_be_valid_to_autocomplete
@@ -64,7 +64,7 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_00000000
     
     context "with cursor inside 1st argument string" do
       setup do
-        @arg_auto = ArgumentAutoComplete.new([line], 1, 67)
+        @arg_auto = ArgumentModifier.new([line], 1, 67)
       end
 
       should_be_valid_to_autocomplete
@@ -92,7 +92,7 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('XXX', '00_000000
 
     context "with cursor just after comma between arguments" do
       setup do
-        @arg_auto = ArgumentAutoComplete.new([line], 1, 86)
+        @arg_auto = ArgumentModifier.new([line], 1, 86)
       end
 
       should_be_valid_to_autocomplete
@@ -111,7 +111,7 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
 
     context "with cursor just inside final parameter" do
       setup do
-        @arg_auto = ArgumentAutoComplete.new([line], 1, 101)
+        @arg_auto = ArgumentModifier.new([line], 1, 101)
       end
 
       should_be_valid_to_autocomplete
@@ -144,7 +144,7 @@ fSomeFunction&() =
 
     context "with cursor inside 1st argument string" do
       setup do
-        @arg_auto = ArgumentAutoComplete.new(@document.split("\n"), 3, 69)
+        @arg_auto = ArgumentModifier.new(@document.split("\n"), 3, 69)
       end
 
       should "replace argument with an EPM string" do

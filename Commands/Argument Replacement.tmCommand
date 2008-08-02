@@ -6,20 +6,20 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
-"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/argument_modifier.rb" auto_complete</string>
+"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/argument_modifier.rb" replace</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>
-	<string>~$</string>
+	<string>^~@r</string>
 	<key>name</key>
-	<string>Argument Autocompletion</string>
+	<string>Argument Replacement</string>
 	<key>output</key>
 	<string>replaceDocument</string>
 	<key>scope</key>
 	<string>source.epm</string>
 	<key>uuid</key>
-	<string>AB01F69F-18E1-4102-B84D-B29D6CCF0819</string>
+	<string>7622EA2C-4D9D-438D-9F3C-FA6FDE9E94CF</string>
 </dict>
 </plist>

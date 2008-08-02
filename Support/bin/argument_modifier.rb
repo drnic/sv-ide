@@ -1,4 +1,4 @@
-class ArgumentAutoComplete
+class ArgumentModifier
   attr_reader :document_lines, :line_num, :line_index, :original_line
   attr_reader :function_name, :argument_no, :line
 
@@ -60,7 +60,14 @@ class ArgumentAutoComplete
 end
 
 if $0 == __FILE__
-  arg_auto = ArgumentAutoComplete.new(STDIN.readlines, ENV["TM_LINE_NUMBER"].to_i, ENV["TM_LINE_INDEX"].to_i)
-  arg_auto.replace_argument_with_string('XXX')
-  print arg_auto.document
+  case ARGV.shift
+  when "auto_complete"
+    arg_auto = ArgumentModifier.new(STDIN.readlines, ENV["TM_LINE_NUMBER"].to_i, ENV["TM_LINE_INDEX"].to_i)
+    arg_auto.replace_argument_with_string('XXX')
+    print arg_auto.document
+  when "replace"
+    arg_auto = ArgumentModifier.new(STDIN.readlines, ENV["TM_LINE_NUMBER"].to_i, ENV["TM_LINE_INDEX"].to_i)
+    arg_auto.replace_argument_with_string('YYY')
+    print arg_auto.document
+  end
 end

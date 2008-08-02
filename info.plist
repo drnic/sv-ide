@@ -2,6 +2,67 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>17FD2959-D122-40E5-B2E8-7490BC0C8659</string>
+			<string>C3602740-5A73-4EE3-B95D-5640FFBB6BD4</string>
+			<string>54DA147E-ECD7-45E6-A1C2-4EE635E35E33</string>
+			<string>D40CA4E0-F810-4F24-9F2E-7617B73B04F6</string>
+			<string>0CEBF1D0-4046-46AB-B877-2F1552FB8FEC</string>
+			<string>13BA7708-D738-4A12-A4C6-324857EC47B9</string>
+			<string>45DD38FE-B134-401F-87DD-E94F382A2231</string>
+			<string>A971CFD7-AF81-461A-B111-DB556DAD253D</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>0CEBF1D0-4046-46AB-B877-2F1552FB8FEC</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>AB01F69F-18E1-4102-B84D-B29D6CCF0819</string>
+					<string>------------------------------------</string>
+					<string>4D584CB4-5F78-48C7-9E33-897F65822F88</string>
+					<string>491C9173-AF80-4CA4-A7CE-788D0BFFB1CE</string>
+				</array>
+				<key>name</key>
+				<string>Internal helpers</string>
+			</dict>
+			<key>13BA7708-D738-4A12-A4C6-324857EC47B9</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>9F45DCB1-DDFB-4426-839C-D5D3AB8763D9</string>
+					<string>98762C02-C5CF-4E4D-A14A-A38AE1D5920F</string>
+					<string>0EE8BA2A-D6FE-4329-AB0F-69F1FA615D05</string>
+				</array>
+				<key>name</key>
+				<string>Function declaration</string>
+			</dict>
+			<key>45DD38FE-B134-401F-87DD-E94F382A2231</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>A9A79BAC-18A2-42C3-898E-13282AD6A4F2</string>
+					<string>22C0698D-1A4D-4443-9BD2-AE0DFDB775F0</string>
+					<string>A962AA2B-6391-4E9D-8C4E-DC4FAE8710DD</string>
+					<string>62F55D99-B0DB-475F-BAED-0CD6335A42CB</string>
+				</array>
+				<key>name</key>
+				<string>Function body</string>
+			</dict>
+			<key>A971CFD7-AF81-461A-B111-DB556DAD253D</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>DD8E2630-8514-4131-B27D-F85397ABFC37</string>
+				</array>
+				<key>name</key>
+				<string>Common functions</string>
+			</dict>
+		</dict>
+	</dict>
 	<key>name</key>
 	<string>EPM</string>
 	<key>ordering</key>
@@ -9,10 +70,10 @@
 		<string>17FD2959-D122-40E5-B2E8-7490BC0C8659</string>
 		<string>C3602740-5A73-4EE3-B95D-5640FFBB6BD4</string>
 		<string>AB01F69F-18E1-4102-B84D-B29D6CCF0819</string>
+		<string>7622EA2C-4D9D-438D-9F3C-FA6FDE9E94CF</string>
 		<string>54DA147E-ECD7-45E6-A1C2-4EE635E35E33</string>
 		<string>4D584CB4-5F78-48C7-9E33-897F65822F88</string>
 		<string>491C9173-AF80-4CA4-A7CE-788D0BFFB1CE</string>
-		<string>D40CA4E0-F810-4F24-9F2E-7617B73B04F6</string>
 		<string>9F45DCB1-DDFB-4426-839C-D5D3AB8763D9</string>
 		<string>A9A79BAC-18A2-42C3-898E-13282AD6A4F2</string>
 		<string>98762C02-C5CF-4E4D-A14A-A38AE1D5920F</string>
