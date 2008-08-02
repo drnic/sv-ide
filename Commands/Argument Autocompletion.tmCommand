@@ -11,8 +11,6 @@
 	<string>word</string>
 	<key>input</key>
 	<string>document</string>
-	<key>keyEquivalent</key>
-	<string>~$</string>
 	<key>name</key>
 	<string>Argument Autocompletion</string>
 	<key>output</key>

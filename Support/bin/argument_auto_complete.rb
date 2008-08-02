@@ -63,5 +63,4 @@ if $0 == __FILE__
   arg_auto = ArgumentAutoComplete.new(STDIN.readlines, ENV["TM_LINE_NUMBER"].to_i, ENV["TM_LINE_INDEX"].to_i)
   arg_auto.replace_argument_with_string('XXX')
   print arg_auto.document
-  `open txmt://open?line=#{ENV["TM_LINE_NUMBER"]}&column=#{ENV["TM_LINE_INDEX"]}`
 end

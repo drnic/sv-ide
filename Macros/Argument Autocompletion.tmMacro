@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>nop</string>
+				<key>command</key>
+				<string>#!/usr/bin/env ruby
+
+tmpdir = "/tmp"
+require "fileutils"
+FileUtils.mkdir_p tmpdir
+tempfile = File.join(tmpdir, "textmate-current-position.csv")
+File.open(tempfile, "w") do |f|
+  f &lt;&lt; "#{ENV["TM_LINE_NUMBER"]},#{ENV["TM_LINE_INDEX"]}"
+end</string>
+				<key>fallbackInput</key>
+				<string>word</string>
+				<key>input</key>
+				<string>none</string>
+				<key>keyEquivalent</key>
+				<string>^~@t</string>
+				<key>name</key>
+				<string>Store Cursor Position</string>
+				<key>output</key>
+				<string>showAsTooltip</string>
+				<key>uuid</key>
+				<string>4D584CB4-5F78-48C7-9E33-897F65822F88</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>nop</string>
+				<key>command</key>
+				<string>RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/argument_auto_complete.rb"</string>
+				<key>fallbackInput</key>
+				<string>word</string>
+				<key>input</key>
+				<string>document</string>
+				<key>keyEquivalent</key>
+				<string>~$</string>
+				<key>name</key>
+				<string>Argument Autocompletion</string>
+				<key>output</key>
+				<string>replaceDocument</string>
+				<key>scope</key>
+				<string>source.epm</string>
+				<key>uuid</key>
+				<string>AB01F69F-18E1-4102-B84D-B29D6CCF0819</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>nop</string>
+				<key>command</key>
+				<string>#!/usr/bin/env ruby
+
+tmpdir = "/tmp"
+tempfile = File.join(tmpdir, "textmate-current-position.csv")
+doc = File.read(tempfile)
+line, column = doc.split(",")
+p [line, column]
+`open "txmt://open/?line=#{line}&amp;column=#{column}"`
+</string>
+				<key>fallbackInput</key>
+				<string>word</string>
+				<key>input</key>
+				<string>none</string>
+				<key>keyEquivalent</key>
+				<string>^~@t</string>
+				<key>name</key>
+				<string>Restore Cursor Position</string>
+				<key>output</key>
+				<string>showAsTooltip</string>
+				<key>uuid</key>
+				<string>491C9173-AF80-4CA4-A7CE-788D0BFFB1CE</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string>~$</string>
+	<key>name</key>
+	<string>Argument Autocompletion</string>
+	<key>scope</key>
+	<string>source.epm</string>
+	<key>uuid</key>
+	<string>D40CA4E0-F810-4F24-9F2E-7617B73B04F6</string>
+</dict>
+</plist>
