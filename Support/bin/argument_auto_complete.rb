@@ -5,6 +5,7 @@ class ArgumentAutoComplete
   def initialize(document_lines, line_num, line_index)
     @document_lines, @line_num, @line_index = document_lines, line_num, line_index
     @original_line = line
+    clean_document_lines
     parse
   end
 
@@ -25,12 +26,15 @@ class ArgumentAutoComplete
   end
   
   def replace_argument(new_value)
+    value = ((argument_no == 1) ? '' : ' ') + new_value
     @line = original_line[0..@arg_start_index-1] + 
-      new_value + original_line[@arg_end_index..-1]
+      value + original_line[@arg_end_index..-1]
+    self
   end
   
   def replace_argument_with_string(new_string)
     replace_argument("'#{new_string}'")
+    self
   end
   
   protected
@@ -39,7 +43,7 @@ class ArgumentAutoComplete
     @argument_no = -1
     return unless @is_argument = (before =~ /\b([\w_]+[$&#~@?](?:\{\}|\[\])?)\(([^)]*)$/)
     @function_name, before_arguments = $1, $2
-    @argument_no = (commas = before_arguments.match(/,/)) ? commas.length : 1
+    @argument_no = before_arguments.split(/,/).length
     return unless @is_argument = (after =~ /^([^)]+)\)/)
     @arg_start_index, @arg_end_index = line_index, line_index
     until line[@arg_start_index-1..@arg_start_index-1] =~ /[(,]/
@@ -49,8 +53,12 @@ class ArgumentAutoComplete
       @arg_end_index += 1
     end
   end
+  
+  def clean_document_lines
+    document_lines.each { |line| line.gsub!(/\n$/, '') }
+  end
 end
 
 if $0 == __FILE__
-  print ArgumentAutoComplete.new(STDIN.readlines, ENV["TM_LINE_NUMBER"], ENV["TM_LINE_INDEX"]).replace_argument_with_string('XXX').document
+  print ArgumentAutoComplete.new(STDIN.readlines, ENV["TM_LINE_NUMBER"].to_i, ENV["TM_LINE_INDEX"].to_i).replace_argument_with_string('XXX').document
 end

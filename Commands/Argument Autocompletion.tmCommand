@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/argument_auto_complete.rb"</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>~$</string>
+	<key>name</key>
+	<string>Argument Autocompletion</string>
+	<key>output</key>
+	<string>replaceDocument</string>
+	<key>scope</key>
+	<string>source.epm</string>
+	<key>uuid</key>
+	<string>AB01F69F-18E1-4102-B84D-B29D6CCF0819</string>
+</dict>
+</plist>
