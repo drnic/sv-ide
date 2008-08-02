@@ -10,6 +10,7 @@
 				 <div class="p-boxhead"><div class="p-headfill">&nbsp;</div></div>
 
 				<div class="p-boxbody">
+					<p><a href="http://feeds.feedburner.com/SV-IDE"><img src="http://feeds.feedburner.com/~fc/SV-IDE?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a></p>
 					<h2><?php _e('Pages'); ?></h2>
 					<ul>
 					<?php wp_list_pages('sort_column=menu_order&title_li='); ?> 
