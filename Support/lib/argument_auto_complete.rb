@@ -16,6 +16,10 @@ class ArgumentAutoComplete
     helper.replace_argument(new_value)
   end
   
+  def replace_argument_with_string(new_string)
+    helper.replace_argument_with_string(new_string)
+  end
+  
   def line
     helper.line
   end
@@ -36,6 +40,10 @@ class ArgumentAutoComplete
     def replace_argument(new_value)
       @line = original_line[0..@arg_start_index-1] + 
         new_value + original_line[@arg_end_index..-1]
+    end
+    
+    def replace_argument_with_string(new_string)
+      replace_argument("'#{new_string}'")
     end
     
     protected

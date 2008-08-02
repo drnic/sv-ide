@@ -46,7 +46,7 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('T2_CC_RETAILER_C
       should_be_valid_to_autocomplete
       should_be_argument 1
 
-      should "replace argument with 'XXX'" do
+      should "replace argument with XXX" do
         @arg_auto.replace_argument('XXX')
         expected_line = <<-LINE
 const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_000000001'));
@@ -64,10 +64,18 @@ const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_00000000
       should_be_valid_to_autocomplete
       should_be_argument 1
       
-      should "replace argument with 'XXX'" do
+      should "replace argument with XXX" do
         @arg_auto.replace_argument('XXX')
         expected_line = <<-LINE
 const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&(XXX, '00_000000001'));
+        LINE
+        assert_equal(expected_line.strip, @arg_auto.line)
+      end
+
+      should "replace argument with an EPM string" do
+        @arg_auto.replace_argument_with_string('XXX')
+        expected_line = <<-LINE
+const cDefaultRetailerCode$ := to_string(ReferenceCodeByLabel&('XXX', '00_000000001'));
         LINE
         assert_equal(expected_line.strip, @arg_auto.line)
       end
