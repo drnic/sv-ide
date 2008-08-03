@@ -64,14 +64,29 @@ class ArgumentModifier
 end
 
 if $0 == __FILE__
+  require File.dirname(__FILE__) + "/environment"
+  out = nil
+  arg_mod = ArgumentModifier.new(STDIN.readlines, ENV["TM_LINE_NUMBER"].to_i, ENV["TM_LINE_INDEX"].to_i)
   case ARGV.shift
   when "auto_complete"
-    arg_auto = ArgumentModifier.new(STDIN.readlines, ENV["TM_LINE_NUMBER"].to_i, ENV["TM_LINE_INDEX"].to_i)
-    arg_auto.replace_argument_with_string('XXX')
-    print arg_auto.document
+    if arg_mod.function_name == 'ReferenceCodeByLabel&'
+      if arg_mod.argument_no == 1
+        if reference_type = TextMate::UI.menu(ReferenceType.names.map { |name| {"title" => name} })
+          arg_mod.replace_argument_with_string(reference_type["title"])
+        end
+      elsif arg_mod.argument_no == 2
+        reference_type_name = arg_mod.arguments[0]
+        if reference_type = ReferenceType.find_by_name(reference_type_name)
+          if reference_code = TextMate::UI.menu(reference_type.codes.map { |code| {"title" => code.name} })
+            arg_mod.replace_argument_with_string(reference_type["title"])
+          end
+        else
+          TextMate::UI.alert(:critical, "ReferenceType invalid", "Cannot find a Reference Type with name '#{reference_type_name}'")
+        end
+      end
+    end
   when "replace"
-    arg_auto = ArgumentModifier.new(STDIN.readlines, ENV["TM_LINE_NUMBER"].to_i, ENV["TM_LINE_INDEX"].to_i)
-    arg_auto.replace_argument_with_string('YYY')
-    print arg_auto.document
+    arg_mod.replace_argument_with_string('YYY')
   end
+  print arg_mod.document
 end

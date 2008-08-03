@@ -93,8 +93,6 @@ p [line, column]
 			<string>executeCommandWithOptions:</string>
 		</dict>
 	</array>
-	<key>keyEquivalent</key>
-	<string>~$</string>
 	<key>name</key>
 	<string>Argument Autocompletion</string>
 	<key>scope</key>
