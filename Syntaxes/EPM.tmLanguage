@@ -126,6 +126,12 @@
 			<key>name</key>
 			<string>keyword.operator.assignment.epm</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\-|\+|=|!=|&lt;=|&gt;=</string>
+			<key>name</key>
+			<string>keyword.operator.epm</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.epm</string>
