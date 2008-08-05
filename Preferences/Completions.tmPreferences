@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Completions</string>
+	<key>scope</key>
+	<string>source.epm</string>
+	<key>settings</key>
+	<dict>
+		<key>completions</key>
+		<array>
+			<string>abort</string>
+			<string>assert</string>
+			<string>break</string>
+			<string>current_time</string>
+			<string>debug</string>
+			<string>eval</string>
+			<string>exists</string>
+			<string>first</string>
+			<string>floor</string>
+			<string>is_defined</string>
+			<string>length</string>
+			<string>next</string>
+			<string>ord</string>
+			<string>print</string>
+			<string>sizeof</string>
+			<string>to_integer</string>
+			<string>to_long</string>
+			<string>to_string</string>
+			<string>undefine</string>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>510C2EF4-2AD2-42C9-8D85-291C216BEC9F</string>
+</dict>
+</plist>

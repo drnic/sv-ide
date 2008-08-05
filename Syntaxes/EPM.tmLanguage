@@ -92,7 +92,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(abort|current_time|debug|eval|exists|floor|is_defined|length|print|to_integer|to_long|to_string|undefine)\b</string>
+			<string>\b(abort|assert|break|current_time|debug|eval|exists|first|floor|is_defined|length|next|ord|print|sizeof|to_integer|to_long|to_string|undefine)\b</string>
 			<key>name</key>
 			<string>support.function.epm</string>
 		</dict>
