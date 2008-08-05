@@ -25,3 +25,12 @@ Environment variables:
 * Function tagging (useful for search) - use atlanta_group?
 * Validate EPM
 * Reformat EPM
+* Reformat SQL concatted string for SQLQuery?[] calls (e.g. `fTT_LegalEntities?[]`)
+* Reformat function calls with many arguments over multiple lines (see `fTT_PRD_List_CustProducts?[]` call in `fTT_MSG_AddAttributes_Lists&`)
+
+* QuickSilver/TextMate Selector via HTML+JS - not sure how a selection within HTML can be picked back up via TextMate. Via txmt protocol?
+
+* Multiple EPM functions on a single page, esp if they are small. Perhaps Alt+G -> open in new file, Shift+Alt+G -> open below current function
+	* Functions shown below the main function could be read-only. Perhaps "on save to SV" it could validate that you haven't modified them in any way, or offer to save those changes too.
+	* Only include small portion of header for the 2+ function in a file
+

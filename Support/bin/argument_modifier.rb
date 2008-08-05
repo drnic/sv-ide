@@ -88,5 +88,6 @@ if $0 == __FILE__
   when "replace"
     arg_mod.replace_argument_with_string('YYY')
   end
+  # TextMate.exit_discard if no changes
   print arg_mod.document
 end
