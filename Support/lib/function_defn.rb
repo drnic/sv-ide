@@ -11,7 +11,9 @@ class FunctionDefn < OpenStruct
   # Returns a list of function names that start with +partial+
   # Note, there may be 1+ interface versions for each result
   def self.find_by_partial(partial)
-    function_defns.keys.select { |func_name| func_name =~ /^#{partial}/ }
+    # function_defns.keys.select { |func_name| func_name =~ /^#{partial}/ }
+    cmd = 'cd ~/.sv-ide/epm_functions && find * | sed -e "s/.*\///" | grep "epm$" | grep "^' + partial + '"'
+    functions = `#{cmd}`.split("\n").map { |function| filename_to_function_name function }
   end
   
   # If no parameters provided to initializer, then return empty array.
@@ -25,6 +27,11 @@ class FunctionDefn < OpenStruct
   def self.filename_to_function_name(filename)
     name, type, interface_no = filename.gsub('.epm', '').split('-')
     "#{name}#{typecode_by_name[type]}"
+  end
+  
+  def self.function_name_to_filename_prefix(function_name)
+    name, typecode = function_name.match(/([\w_.]+)([$&#~@?]?(?:\{\}|\[\])?)/)[1..2]
+    "#{name}-#{typename_by_code[typecode]}"
   end
   
   def self.typecode_by_name
@@ -50,6 +57,10 @@ class FunctionDefn < OpenStruct
       'unknownhash' => '?{}',
       'blobhash' => '@{}',
       }
+  end
+  
+  def self.typename_by_code
+    @@typename_by_code ||= Hash[*typecode_by_name.to_a.flatten.reverse]
   end
   
   protected
