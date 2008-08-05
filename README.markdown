@@ -19,11 +19,11 @@ On TextMate:
 
 * Open Preferences
 * Click "Text Editing"
-* Change "Word Characters" to: _@#$&~{}[]
+* Change "Word Characters" to: `_@#$&~{}[]`
 
 For example:
 
-<div class="thumbnail"><a href="http://skitch.com/drnic/1t3j/variable-type-characters-as-word-characters"><img src="http://img.skitch.com/20080805-ph62qqmbqghugeigsia272u5p9.preview.jpg" alt="Variable type characters as word characters" /></a><br /><span style="font-family: Lucida Grande, Trebuchet, sans-serif, Helvetica, Arial; font-size: 10px; color: #808080">Uploaded with <a href="http://plasq.com/">plasq</a>'s <a href="http://skitch.com">Skitch</a>!</span></div>
+<div class="thumbnail"><a href="http://skitch.com/drnic/1t3j/variable-type-characters-as-word-characters"><img src="http://img.skitch.com/20080805-ph62qqmbqghugeigsia272u5p9.preview.jpg" alt="Variable type characters as word characters" /></a></div>
 
 
 ## Windows
