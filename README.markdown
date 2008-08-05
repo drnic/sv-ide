@@ -13,6 +13,19 @@ Environment variables:
 * `SV_USER` or `USER` - e.g. drnic (your CB login)
 * `SV_ORGANIZATION_NAME` - e.g. Intec Billing Pty Ltd (the company that copyrights your source)
 
+### Add variable/function type characters as official characters of words
+
+On TextMate:
+
+* Open Preferences
+* Click "Text Editing"
+* Change "Word Characters" to: _@#$&~{}[]
+
+For example:
+
+<div class="thumbnail"><a href="http://skitch.com/drnic/1t3j/variable-type-characters-as-word-characters"><img src="http://img.skitch.com/20080805-ph62qqmbqghugeigsia272u5p9.preview.jpg" alt="Variable type characters as word characters" /></a><br /><span style="font-family: Lucida Grande, Trebuchet, sans-serif, Helvetica, Arial; font-size: 10px; color: #808080">Uploaded with <a href="http://plasq.com/">plasq</a>'s <a href="http://skitch.com">Skitch</a>!</span></div>
+
+
 ## Windows
 
 * Need to test that Function Autocompletion works with TextMate::UI.menu - may need a downgrade option for E Text Editor
@@ -27,6 +40,7 @@ Environment variables:
 * Reformat EPM
 * Reformat SQL concatted string for SQLQuery?[] calls (e.g. `fTT_LegalEntities?[]`)
 * Reformat function calls with many arguments over multiple lines (see `fTT_PRD_List_CustProducts?[]` call in `fTT_MSG_AddAttributes_Lists&`)
+* Reformat function parameter declarations over multiple lines (e.g. `fTT_MSG_AddAttributes_Lists&`)
 
 * QuickSilver/TextMate Selector via HTML+JS - not sure how a selection within HTML can be picked back up via TextMate. Via txmt protocol?
 
