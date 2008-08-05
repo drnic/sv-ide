@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:var $2;
+}for (${2:lidx&amp;} := 0; $2 &lt; sizeof(${5:List?}[]); $2++) {
+	$0$5[$2]	
+}</string>
+	<key>name</key>
+	<string>for - iterate a list</string>
+	<key>scope</key>
+	<string>source.epm</string>
+	<key>tabTrigger</key>
+	<string>for</string>
+	<key>uuid</key>
+	<string>B346FCEC-0026-48AC-B582-24E38A9BD585</string>
+</dict>
+</plist>
