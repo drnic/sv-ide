@@ -50,4 +50,4 @@ For example:
 * Multiple EPM functions on a single page, esp if they are small. Perhaps Alt+G -> open in new file, Shift+Alt+G -> open below current function
 	* Functions shown below the main function could be read-only. Perhaps "on save to SV" it could validate that you haven't modified them in any way, or offer to save those changes too.
 	* Only include small portion of header for the 2+ function in a file
-
+	* Functions with same name, diff iterface could be on same page since one prob calls the other
