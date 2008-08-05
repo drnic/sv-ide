@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>var l_${1:VarName&amp;}${2:, }</string>
+	<string>${1:var }l_${2:VarName&amp;}${3:, }</string>
 	<key>name</key>
 	<string>var in parameters</string>
 	<key>scope</key>
