@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SQLQuery?[](${2:'${1:SELECT * FROM sometable ' +
+		'WHERE something happens}'},        # SQL statement to execute
+		${5:lParamNames$[]},  # Names of parameters in statement
+		${6:lParamValues?[]});  # Values to pass to parameters</string>
+	<key>name</key>
+	<string>SQLQuery</string>
+	<key>scope</key>
+	<string>source.epm</string>
+	<key>tabTrigger</key>
+	<string>sql</string>
+	<key>uuid</key>
+	<string>FD34F971-4369-45EA-81F6-CBB733496A1D</string>
+</dict>
+</plist>
