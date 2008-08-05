@@ -22,6 +22,36 @@ class FunctionDefn < OpenStruct
     super || []
   end
   
+  def self.filename_to_function_name(filename)
+    name, type, interface_no = filename.gsub('.epm', '').split('-')
+    "#{name}#{typecode_by_name[type]}"
+  end
+  
+  def self.typecode_by_name
+    @@typecode_by_name ||= {
+      'blob' => '@',
+      'date' => '~',
+      'string' => '$',
+      'integer' => '&',
+      'real' => '#',
+      'unknown' => '?',
+
+      'blobarray' => '@[]',
+      'datearray' => '~[]',
+      'stringarray' => '$[]',
+      'integerarray' => '&[]',
+      'realarray' => '#[]',
+      'unknownarray' => '?[]',
+
+      'datehash' => '~{}',
+      'stringhash' => '${}',
+      'integerhash' => '&{}',
+      'realhash' => '#{}',
+      'unknownhash' => '?{}',
+      'blobhash' => '@{}',
+      }
+  end
+  
   protected
   def self.function_defns
     test_env? ? function_defns_by_fixtures : function_defns_by_thp

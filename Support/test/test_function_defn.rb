@@ -2,6 +2,13 @@ require File.dirname(__FILE__) + "/test_helper"
 
 require "function_defn"
 
+class Context
+  def should_convert_filename(filename, function_name)
+    should "convert filename '#{filename}' to function name '#{function_name}'" do
+      assert_equal(function_name, FunctionDefn.filename_to_function_name(filename))
+    end
+  end
+end
 class TestFunctionDefn < Test::Unit::TestCase
   context "test env -" do
     setup do
@@ -34,4 +41,15 @@ class TestFunctionDefn < Test::Unit::TestCase
     end
   end
   
+  context "epm_function file names" do
+    should_convert_filename "treEventSubscribe-integer-1.epm", "treEventSubscribe&"
+    should_convert_filename "fTT_TIP_GetMediaChannels.RPC-unknownhash-1.epm", "fTT_TIP_GetMediaChannels.RPC?{}"
+    should_convert_filename "treStatsDate-date-1.epm", "treStatsDate~"
+    should_convert_filename "fT2_TRT_CollectionGetData-unknownarray-1.epm", "fT2_TRT_CollectionGetData?[]"
+    should_convert_filename "biFunctionVariablesUsed-stringarray-1.epm", "biFunctionVariablesUsed$[]"
+    should_convert_filename "biServiceSubtotalFetch-realhash-4.epm", 'biServiceSubtotalFetch#{}'
+    should_convert_filename "biAdjustmentAdjustAmount-real-1.epm", "biAdjustmentAdjustAmount#"
+  end
+  
+  # find * | sed -e "s/.*\///" | grep "epm$"
 end
