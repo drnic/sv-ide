@@ -14,6 +14,7 @@
 			<string>13BA7708-D738-4A12-A4C6-324857EC47B9</string>
 			<string>45DD38FE-B134-401F-87DD-E94F382A2231</string>
 			<string>A971CFD7-AF81-461A-B111-DB556DAD253D</string>
+			<string>7622EA2C-4D9D-438D-9F3C-FA6FDE9E94CF</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -46,8 +47,13 @@
 				<array>
 					<string>A9A79BAC-18A2-42C3-898E-13282AD6A4F2</string>
 					<string>22C0698D-1A4D-4443-9BD2-AE0DFDB775F0</string>
+					<string>A4133EF7-DCB1-41EA-8A61-17234E0B953A</string>
+					<string>DF813867-D547-44B1-A1B7-424438AC4E61</string>
+					<string>B25F1FF6-A46E-48F2-9FBB-FC152F59EB11</string>
 					<string>A962AA2B-6391-4E9D-8C4E-DC4FAE8710DD</string>
+					<string>99EE0B96-95DF-4598-B55D-68FCBA9977D1</string>
 					<string>62F55D99-B0DB-475F-BAED-0CD6335A42CB</string>
+					<string>31A4AA51-8A31-4AC5-915C-CBE16D8E548B</string>
 				</array>
 				<key>name</key>
 				<string>Function body</string>
@@ -57,6 +63,9 @@
 				<key>items</key>
 				<array>
 					<string>DD8E2630-8514-4131-B27D-F85397ABFC37</string>
+					<string>D6746AB2-3240-472C-98C1-7C7D2DB46881</string>
+					<string>B3D93913-676D-4AAB-865D-26DE1FB22956</string>
+					<string>FD34F971-4369-45EA-81F6-CBB733496A1D</string>
 				</array>
 				<key>name</key>
 				<string>Common functions</string>
