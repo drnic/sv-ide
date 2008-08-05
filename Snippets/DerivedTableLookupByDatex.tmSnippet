@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>DerivedTableLookupByDatex&amp;(${2:'${1:cTableName$}'}, 
+						${3:lEffectiveDate~}, 
+						${4:lKeys?[]},
+						${5:lResults?[]})</string>
+	<key>name</key>
+	<string>DerivedTableLookupByDatex</string>
+	<key>scope</key>
+	<string>source.epm</string>
+	<key>tabTrigger</key>
+	<string>dtlbdx</string>
+	<key>uuid</key>
+	<string>B3D93913-676D-4AAB-865D-26DE1FB22956</string>
+</dict>
+</plist>
