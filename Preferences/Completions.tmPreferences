@@ -29,6 +29,9 @@
 			<string>to_long</string>
 			<string>to_string</string>
 			<string>undefine</string>
+			<string>const</string>
+			<string>var</string>
+			<string>return</string>
 		</array>
 	</dict>
 	<key>uuid</key>
