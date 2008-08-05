@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>abort(${1:lErrorMessageId&amp;}, ${3:[$2]});</string>
+	<key>name</key>
+	<string>abort</string>
+	<key>scope</key>
+	<string>source.epm</string>
+	<key>tabTrigger</key>
+	<string>abort</string>
+	<key>uuid</key>
+	<string>31A4AA51-8A31-4AC5-915C-CBE16D8E548B</string>
+</dict>
+</plist>
