@@ -33,14 +33,17 @@ For example:
 ## Ideas
 
 * In function comment headers add a REMOTE: block to describe the remote settings of a function, if applicable. Allow this block to be generated for pre-existing functions
+	* Or reuse the eccs .epm header format
 * Function name helper - a widget to help with function name namespacing (see Developers Guide)
-* Function search
+* Function search and generate snippet with tab stops for arguments
 * Function tagging (useful for search) - use atlanta_group?
-* Validate EPM
+* Validate EPM (perhaps using FunctionParse&)
 * Reformat EPM
-* Reformat SQL concatted string for SQLQuery?[] calls (e.g. `fTT_LegalEntities?[]`)
+* Reformat SQL concatted string for SQLQuery?[] calls (e.g. `fTT_LegalEntities?[]` or `fTT_NonDebitMemoElig&`)
 * Reformat function calls with many arguments over multiple lines (see `fTT_PRD_List_CustProducts?[]` call in `fTT_MSG_AddAttributes_Lists&`)
 * Reformat function parameter declarations over multiple lines (e.g. `fTT_MSG_AddAttributes_Lists&`)
+* abort(id, [args]) - a Command to select error msg from list and generate snippet with tab stops
+* abort(id, ...) - "Go to Error Message" Command
 
 * QuickSilver/TextMate Selector via HTML+JS - not sure how a selection within HTML can be picked back up via TextMate. Via txmt protocol?
 
