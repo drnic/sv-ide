@@ -3,7 +3,7 @@ class FunctionDefn
   attr_reader :name, :signature, :parameters, :interface
   def initialize(filepath)
     @filepath   = filepath
-    parser      = FunctionDefnParser.new(File.readlines(File.join(Environment.cache_dir, filepath)))
+    parser      = FunctionDefnParser.new(File.readlines(File.join(self.class.dir, filepath)))
     @name       = parser.name
     @parameters = parser.parameters
     @signature  = parser.signature
@@ -16,7 +16,7 @@ class FunctionDefn
   # Normally there is only one interface, so the result will be {1 => <FunctionDefn name=ReferenceCodeByLabel&>}
   def self.find_by_name(function_name)
     filename_prefix = function_name_to_filename_prefix(function_name)
-    cmd = %Q{cd #{Environment.cache_dir} && find * | grep "\/#{filename_prefix}.*epm$"}
+    cmd = %Q{cd #{dir} && find * | grep "\/#{filename_prefix}.*epm$"}
     epm_files = `#{cmd}`.split("\n")
     epm_files.inject({}) do |interfaces, filepath|
       filepath =~ /-(\d+)\.epm$/
@@ -28,8 +28,7 @@ class FunctionDefn
   # Returns a list of function names that start with +partial+
   # Note, there may be 1+ interface versions for each result
   def self.find_names_by_partial(partial)
-    # function_defns.keys.select { |func_name| func_name =~ /^#{partial}/ }
-    cmd = %Q{cd #{Environment.cache_dir} && find * | sed -e "s/.*\\///" | grep "epm$" | grep "^#{partial}"}
+    cmd = %Q{cd #{dir} && find * | sed -e "s/.*\\///" | grep "epm$" | grep "^#{partial}"}
     functions = `#{cmd}`.split("\n").map { |function| filename_to_function_name function }.uniq
   end
   
@@ -72,4 +71,7 @@ class FunctionDefn
     @@typename_by_code ||= Hash[*typecode_by_name.to_a.flatten.reverse]
   end
   
+  def self.dir
+    Environment.cache_dir
+  end
 end

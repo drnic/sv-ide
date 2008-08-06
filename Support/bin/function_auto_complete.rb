@@ -2,7 +2,7 @@
 #
 # Function Autocomplete Command
 
-require File.dirname(__FILE__) + '/../lib/function_defn'
+require File.dirname(__FILE__) + '/environment'
 require "ui"
 
 class FunctionAutoComplete

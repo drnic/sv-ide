@@ -117,5 +117,20 @@ SQLQuery?[](
     should_have_signature 'ReferenceCodeValidate&(const ReferenceTypeLabel$, const ReferenceCode&, const FieldName$)'
   end
   
+  context "function with inbound var parameter" do
+    setup do
+      function = <<-LINES
+ReferenceCodeAbbrev$(const ReferenceTypeAbbrev$, ReferenceCode&) = 
+{   # If called from client, call remote function
+    biReferenceCodeAbbrev$(ReferenceTypeAbbrev$, ReferenceCode&);
+}
+      LINES
+      @parser = FunctionDefnParser.new(function.split("\n"))
+    end
+
+    should_have_name "ReferenceCodeAbbrev$"
+    should_have_parameters ["ReferenceTypeAbbrev$", "ReferenceCode&"]
+    should_have_signature 'ReferenceCodeAbbrev$(const ReferenceTypeAbbrev$, ReferenceCode&)'
+  end
   
 end

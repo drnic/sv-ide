@@ -19,9 +19,10 @@ class FunctionDefnParser
   def parse_function_signature
     if doc_no_lines =~ /([\w_]+[$&#~@?]?(?:\{\}|\[\])?)\((.*)\)[\s\t]*=/
       @name, parameter_str = $1, $2
-      @parameter_defns     = parameter_str.split(/[\s\t]*,[\s\t]*/).map { |param_str| param_str.split }
-      @parameters          = parameter_defns.map { |defn, name| name }
-      @signature           = "#{name}(#{parameter_defns.map { |defn, name| "#{defn} #{name}" }.join(', ')})"
+      @parameter_defns     = parameter_str.split(/[\s\t]*,[\s\t]*/).map { |param_str| param_str.split.reverse }
+      @parameters          = parameter_defns.map { |name, defn| name }
+      arguments            = parameter_defns.map { |name, defn| "#{defn} #{name}".strip }.join(', ')
+      @signature           = "#{name}(#{arguments})"
     end
   end
 end

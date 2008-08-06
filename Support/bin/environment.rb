@@ -10,6 +10,10 @@ module Environment
   extend self
   
   def cache_dir
-    @cache_dir ||= File.join(File.expand_path(ENV['HOME'] || '~'), ".sv-ide")
+    @cache_dir ||= File.join(home, ".sv-ide")
+  end
+  
+  def home
+    @home ||= ENV["HOME"] || ENV["HOMEPATH"] || File.expand_path("~")
   end
 end
