@@ -1,0 +1,62 @@
+#****f* Local/SQLQuery-integer-2.epm 
+# SERVICE
+# Local
+# APPLICATION ENVIRONMENT
+# Any
+# CONTEXT
+# Any
+
+# THIS ITEM CALLS
+# |html <pre>
+# |html </pre>
+
+# THIS ITEM IS CALLED BY
+# |html <pre>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_HistoryChangeDesc-integer-1_epm.html'>fT2_CC_HistoryChangeDesc&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biSQLExecute/biSQLQueryRW-integer-1_epm.html'>biSQLQueryRW&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biSQLQuery/biSQLQuery-integer-1_epm.html'>biSQLQuery&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zbiIsFirstHistoryRecord-integer-1_epm.html'>zbiIsFirstHistoryRecord&</a>
+# |html </pre>
+# SOURCE
+SQLQuery&(
+            const SQLText$,                # SQL Query to execute
+            const ParamNames$[],           # List of Parameter names:  String parameters first, then
+                                           #  integer, then real, then date
+            const StringParamValues$[],    # String parameter values
+            const IntegerParamValues&[],   # Integer parameter values
+            const RealParamValues#[],      # Real parameter values
+            const DateParamValues~[],      # Date parameter values
+            FromRowNr&,                    # First row to return - rows start from 1
+            ToRowNr&,                      # Last row to return
+            var StringFieldValuesPerRow&,  # Number of string field values for each result row
+            var StringFieldValues$[],      # String field values for all result rows
+            var IntegerFieldValuesPerRow&, # Number of integer field values for each result row
+            var IntegerFieldValues&[],     # Integer field values for all result rows
+            var RealFieldValuesPerRow&,    # Number of real field values for each result row
+            var RealFieldValues#[],        # Real field values for all result rows                           
+            var DateFieldValuesPerRow&,    # Number of date field values for each result row
+            var DateFieldValues~[])        # Date field values for all result rows
+= { 
+    # SQLQuery&(2)() is a built-in function which when executed within an appropriate server, executes the 
+    # statement locally.  In cases where the SQLQuery&() function is not built-in, default to calling the
+    # remote version.  This means configurers can always call SQLQuery&() in any environment and expect it
+    # to execute ok.
+     
+    biSQLQuery&(SQLText$,
+            ParamNames$[],
+            StringParamValues$[], 
+            IntegerParamValues&[],
+            RealParamValues#[],   
+            DateParamValues~[],   
+            FromRowNr&,           
+            ToRowNr&,             
+            StringFieldValuesPerRow&,
+            StringFieldValues$[],    
+            IntegerFieldValuesPerRow&,
+            IntegerFieldValues&[],  
+            RealFieldValuesPerRow&, 
+            RealFieldValues#[],                                
+            DateFieldValuesPerRow&, 
+            DateFieldValues~[]);
+}
+#*****

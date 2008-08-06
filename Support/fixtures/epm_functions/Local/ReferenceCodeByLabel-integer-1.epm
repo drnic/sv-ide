@@ -1,0 +1,748 @@
+#****f* Local/ReferenceCodeByLabel-integer-1.epm 
+# SERVICE
+# Local
+# APPLICATION ENVIRONMENT
+# Any
+# CONTEXT
+# Any
+
+# THIS ITEM CALLS
+# |html <pre>
+# |html </pre>
+
+# THIS ITEM IS CALLED BY
+# |html <pre>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PreCommit-integer-1_epm.html'>fT2_PRD_PreCommit&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluate/fT2_PRV_IncreaseRetryCntr-integer-1_epm.html'>fT2_PRV_IncreaseRetryCntr&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_FinalRebuildList-integer-1_epm.html'>fT2_PRD_MultiProdOrd_FinalRebuildList&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_PRD_MultiProdOrd_Add_Async-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Add_Async&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRD_MultiProdOrd_UpdateList-integer-1_epm.html'>fTT_PRD_MultiProdOrd_UpdateList&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PAY_PreCommit-integer-1_epm.html'>fTT_PAY_PreCommit&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_Cascade-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Cascade&</a>
+# |html Subtotal - sS_T2_BIL_TotChgFreePhoneExclVatPerAnsNumPerCallDate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_ServCheckMandatoryStatusReason-integer-1_epm.html'>fT2_PRD_ServCheckMandatoryStatusReason&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PAY_InvoiceCollCorrPaymentPostCommitElig-integer-1_epm.html'>fT2_PAY_InvoiceCollCorrPaymentPostCommitElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_UpdateChildEntities-integer-1_epm.html'>fT2_CC_UpdateChildEntities&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_ADJ_VAT_Adjusment-stringarray-1_epm.html'>fT2_ADJ_VAT_Adjusment$[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_INT_Product_Order-integer-1_epm.html'>fT2_INT_Product_Order&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INT_AssignMgM-integer-1_epm.html'>fT2_INT_AssignMgM&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRD_MultiProdOrd_CheckCascadeStatus-integer-1_epm.html'>fTT_PRD_MultiProdOrd_CheckCascadeStatus&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_Val_Expiry_Date-integer-1_epm.html'>fT2_CC_Val_Expiry_Date&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgAutoChangeComponents-integer-1_epm.html'>fT2_PRD_PkgAutoChangeComponents&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_PostCommit-integer-1_epm.html'>fT2_PRV_PostCommit&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_DSC_Retrieve_FreeUnits-unknownarray-1_epm.html'>fT2_DSC_Retrieve_FreeUnits?[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_MSG_DDPaymentRejectElig-integer-1_epm.html'>fTT_MSG_DDPaymentRejectElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_DirectDebit_Insert-integer-2_epm.html'>fT2_CC_DirectDebit_Insert& (2)</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_ADJ_ReqPreCommit-integer-1_epm.html'>fTT_ADJ_ReqPreCommit&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/T2_PRV/fT2_PRD_Initial_Status_Update_Q-integer-1_epm.html'>fT2_PRD_Initial_Status_Update_Q&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_ADJ_PreCommit-integer-1_epm.html'>fTT_ADJ_PreCommit&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_IndirectAccessActionFunction-integer-1_epm.html'>fT2_PRV_IndirectAccessActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CreateRequest-integer-1_epm.html'>fT2_PRV_CreateRequest&</a>
+# |html Subtotal - sCN_T2_BIL_CLP_VATAdj#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgAddComponents-integer-1_epm.html'>fT2_PRD_PkgAddComponents&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_RAT_GetChargeGuidingDetails-integer-1_epm.html'>fTT_RAT_GetChargeGuidingDetails&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_CheckDuplicateServiceNetwork-integer-1_epm.html'>fT2_PRD_CheckDuplicateServiceNetwork&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_NEWirelineDecode-integer-1_epm.html'>fT2_RAT_NEWirelineDecode&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_BankToBranch-integer-1_epm.html'>fT2_CC_BankToBranch&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_ADJ_GenCreditMemoNum-integer-1_epm.html'>fT2_ADJ_GenCreditMemoNum&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Post_20003687-integer-1_epm.html'>fagEVS_Post_20003687&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_TAX_CalcTax-real-1_epm.html'>fT2_TAX_CalcTax#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_UpdService-integer-1_epm.html'>fT2_PRD_MultiProdOrd_UpdService&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_Validation-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Validation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProd_ValidateCompanionProducts-integer-1_epm.html'>fT2_PRD_MultiProd_ValidateCompanionProducts&</a>
+# |html Tariff - tT2_BIL_InvoiceFee#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_TRT_CollectionQuery-integer-1_epm.html'>fT2_TRT_CollectionQuery&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_PRD_MultiProdOrd_Add-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Add&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_Operations-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Operations&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRD_MultiProdOrd_FetchServDetails-integer-1_epm.html'>fTT_PRD_MultiProdOrd_FetchServDetails&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRD_UpdateFutureRecords-integer-1_epm.html'>fTT_PRD_UpdateFutureRecords&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTKT_MandatoryCheck-integer-1_epm.html'>fTKT_MandatoryCheck&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTKT_ValidateProgress-integer-1_epm.html'>fTKT_ValidateProgress&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FLFM_ProductStatusSetup-integer-1_epm.html'>utT2_FU_FLFM_ProductStatusSetup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSS_ADSLServiceDetailsType-integer-1_epm.html'>fT2_PRV_SSS_ADSLServiceDetailsType&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utTT_Phuri_CreateCustTest-integer-1_epm.html'>utTT_Phuri_CreateCustTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FLFM_ProductStatus.Day31_FUMASetup-integer-1_epm.html'>utT2_FU_FLFM_ProductStatus.Day31_FUMASetup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/fT2_INV_BillRunInvoiceRevokeWriteOff-integer-1_epm.html'>fT2_INV_BillRunInvoiceRevokeWriteOff&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CLIPActionFunction-integer-1_epm.html'>fT2_PRV_CLIPActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_BuildProductRCNRCKey-string-1_epm.html'>fT2_BIL_BuildProductRCNRCKey$</a>
+# |html Subtotal - sCN_T2_BIL_CLP_ChgVatAmtPerChgTypPerVATRate#{}
+# |html Subtotal - sCN_T2_BIL_CLP_ChgExclVatPerChgTypPerVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_BIL_OverPayments-realhash-1_epm.html'>fTT_BIL_OverPayments#{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_SellMemberGetsMember-integer-1_epm.html'>fT2_DSC_SellMemberGetsMember&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_TRT_ReactivateAction-integer-1_epm.html'>fT2_TRT_ReactivateAction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Expr_00010664_00000001-integer-1_epm.html'>fagEVS_Expr_00010664_00000001&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Apply_FreeUnit-integer-1_epm.html'>fT2_DSC_Apply_FreeUnit&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Accumulate_Usage_Charge-realhash-1_epm.html'>fT2_DSC_Accumulate_Usage_Charge#{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_TKT_ReleaseCopy-integer-1_epm.html'>fTT_TKT_ReleaseCopy&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCLEC_NE_TAX_CnvToIndex-integer-1_epm.html'>fCLEC_NE_TAX_CnvToIndex&</a>
+# |html Subtotal - sS_T2_BIL_OneOffChgExclVATPerVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_INT_ST_CustomerValidation_R-unknownhash-1_epm.html'>fT2_INT_ST_CustomerValidation_R?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INT_FreeUnits_Retrieve-unknownhash-1_epm.html'>fT2_INT_FreeUnits_Retrieve?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ResendADSLUpdateService-integer-1_epm.html'>fT2_PRV_ResendADSLUpdateService&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/fT2_InvoiceDeallocateCustomers-integer-1_epm.html'>fT2_InvoiceDeallocateCustomers&</a>
+# |html Subtotal - sS_T2_BIL_DSL_TimeBandEvtCount&{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_UpdateStatusOfRequest-integer-1_epm.html'>fT2_PRV_UpdateStatusOfRequest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_EV_PaymentInsert-integer-1_epm.html'>fT2_EV_PaymentInsert&</a>
+# |html Subtotal - sS_T2_BIL_DurCallTypePerVatRate#{}
+# |html Tariff - tT2_Data_AdvSemPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_PROV_CheckForActiveSvc-integer-1_epm.html'>fCMN_PROV_CheckForActiveSvc&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.trigger.e2e.SupensionCustomer-integer-1_epm.html'>ut.msg.trigger.e2e.SupensionCustomer&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.object.fTT_MSG_AddAttributes_PaymentMethod-integer-1_epm.html'>ut.msg.object.fTT_MSG_AddAttributes_PaymentMethod&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.object.fTT_dTT_MSG_Type_Send_Method-integer-1_epm.html'>ut.msg.object.fTT_dTT_MSG_Type_Send_Method&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.object.fTT_MSG_AddAttributes_BankRelatedData_DD-integer-1_epm.html'>ut.msg.object.fTT_MSG_AddAttributes_BankRelatedData_DD&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.trigger.epm.fTT_MSG_CustomerNodeMessage-integer-1_epm.html'>ut.msg.trigger.epm.fTT_MSG_CustomerNodeMessage&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.trigger.e2e.ReactivationCustomer-integer-1_epm.html'>ut.msg.trigger.e2e.ReactivationCustomer&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.trigger.epm.fTT_MSG_ProductMessage-integer-1_epm.html'>ut.msg.trigger.epm.fTT_MSG_ProductMessage&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_ChSub-integer-1_epm.html'>fT2_PRD_MultiProdOrd_ChSub&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_MSG_AddAttributes_Lists-integer-1_epm.html'>fTT_MSG_AddAttributes_Lists&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_CheckRatingTables-integer-1_epm.html'>fT2_DSC_CheckRatingTables&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_CalculateInvoiceFee-unknownhash-1_epm.html'>fT2_BIL_CalculateInvoiceFee?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_CheckDuplicateFiles-integer-1_epm.html'>fT2_CheckDuplicateFiles&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PAY_PaymentPostCommit-integer-1_epm.html'>fT2_PAY_PaymentPostCommit&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_EQUI_ValidateEquipmentItemNumber-integer-1_epm.html'>fT2_EQUI_ValidateEquipmentItemNumber&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_ADJ_QryOneOffCharge-integer-1_epm.html'>fTT_ADJ_QryOneOffCharge&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ANumberModifyActionFunction-integer-1_epm.html'>fT2_PRV_ANumberModifyActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CLIRActionFunction-integer-1_epm.html'>fT2_PRV_CLIRActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CLPActionFunction-integer-1_epm.html'>fT2_PRV_CLPActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CallBarringActionFunction-integer-1_epm.html'>fT2_PRV_CallBarringActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSSActionFunction-integer-1_epm.html'>fT2_PRV_SSSActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_VoicemailActionFunction-integer-1_epm.html'>fT2_PRV_VoicemailActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_VoipActionFunction-integer-1_epm.html'>fT2_PRV_VoipActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRV_CBActionFunction-integer-1_epm.html'>fTT_PRV_CBActionFunction&</a>
+# |html Subtotal - sCN_T2_BIL_ServUsageMinDate~{}
+# |html Tariff - tTT_ADJ_OneOffCharge#
+# |html Tariff - tTT_TAX_ADJ_OneOffCharge#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_GetMaxDiscountCharge-real-1_epm.html'>fT2_DSC_GetMaxDiscountCharge#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_VolumeBasedChg-real-1_epm.html'>fT2_RAT_VolumeBasedChg#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_ONE_NEDecode-integer-1_epm.html'>fTT_ONE_NEDecode&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PostCommit-integer-1_epm.html'>fT2_PRD_PostCommit&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_PRV_ResendProvisionRequest-integer-1_epm.html'>fT2_PRV_ResendProvisionRequest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INV_AssignFields-integer-1_epm.html'>fT2_INV_AssignFields&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_MSG_CustomerNodeMessage-integer-1_epm.html'>fTT_MSG_CustomerNodeMessage&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ProcessAction-integer-1_epm.html'>fT2_PRV_ProcessAction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_DD_GenerateDDRejectionQuery-integer-1_epm.html'>fT2_DD_GenerateDDRejectionQuery&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_PRD_MultiProdOrd_Cascade_Q-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Cascade_Q&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_NEDataDecode-integer-1_epm.html'>fT2_RAT_NEDataDecode&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_BuildCLPChgKey-string-1_epm.html'>fT2_BIL_BuildCLPChgKey$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluate/fT2_PRV_ResendCAPNonT2ProvRequest-integer-1_epm.html'>fT2_PRV_ResendCAPNonT2ProvRequest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INV_BillRunInvoiceWriteOffElig-integer-1_epm.html'>fT2_INV_BillRunInvoiceWriteOffElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/zEVS_GenFunction-integer-1_epm.html'>zEVS_GenFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_ReplaceVariables-integer-1_epm.html'>zEVS_ReplaceVariables&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_TrevCntrStatus-integer-1_epm.html'>zEVS_TrevCntrStatus&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Def_20000109_00000020-unknown-1_epm.html'>fagEVS_Def_20000109_00000020?</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_UTAActionFunction-integer-1_epm.html'>fT2_PRV_UTAActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_GenDefaultsFunction-integer-1_epm.html'>zEVS_GenDefaultsFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_CheckString-integer-1_epm.html'>zEVS_CheckString&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_EvalProdFacPreCommit-integer-1_epm.html'>zEVS_EvalProdFacPreCommit&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Def_20004648_00000020-unknown-1_epm.html'>fagEVS_Def_20004648_00000020?</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Expr_20003845_00000001-integer-1_epm.html'>fagEVS_Expr_20003845_00000001&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Expr_20003845_00000003-integer-1_epm.html'>fagEVS_Expr_20003845_00000003&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_PopulateCIN_IT-integer-1_epm.html'>fT2_CC_PopulateCIN_IT&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fUTL_IsDeterministic-integer-1_epm.html'>fUTL_IsDeterministic&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEV_QueryInsert-integer-1_epm.html'>zEV_QueryInsert&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_GenResolveCode-string-1_epm.html'>zEVS_GenResolveCode$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fUTL_GetNextToken-integer-1_epm.html'>fUTL_GetNextToken&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_CheckDate-integer-1_epm.html'>zEVS_CheckDate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_PreToPostBatch-integer-1_epm.html'>fT2_CC_PreToPostBatch&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Def_20004517_00000021-unknown-1_epm.html'>fagEVS_Def_20004517_00000021?</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_PRD_MultiProdOrd_Cascade_RW-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Cascade_RW&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEVS_GenCustomerFunction-integer-1_epm.html'>fEVS_GenCustomerFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_Validate-integer-1_epm.html'>zEVS_Validate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fTT_LoadTariffs-integer-1_epm.html'>fTT_LoadTariffs&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEV_CustomerCancel-integer-1_epm.html'>zEV_CustomerCancel&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FLFM_ExampleSetup-integer-1_epm.html'>utT2_FU_FLFM_ExampleSetup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_CacheLegalEntityAllocation-unknownhash-1_epm.html'>fT2_BIL_CacheLegalEntityAllocation?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_GenValTypeChangeCode-string-1_epm.html'>zEVS_GenValTypeChangeCode$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_PRD_CampaignCodeProductHistory-integer-1_epm.html'>fT2_PRD_CampaignCodeProductHistory&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CLM_WarningQuery-integer-1_epm.html'>fT2_CLM_WarningQuery&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_CompProductsChanged-integer-1_epm.html'>fT2_PRD_CompProductsChanged&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_RCTariffEligibility-integer-1_epm.html'>fT2_DSC_RCTariffEligibility&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_ToInt-integer-2_epm.html'>zEVS_ToInt& (2)</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgGetComponents-unknownarray-1_epm.html'>fT2_PRD_PkgGetComponents?[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_QryOneOffCharge-integer-1_epm.html'>fT2_PRD_QryOneOffCharge&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_AddContext-integer-1_epm.html'>fT2_PRV_AddContext&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INT_Fetch_Acc_Credit_Details-unknownhash-2_epm.html'>fT2_INT_Fetch_Acc_Credit_Details?{} (2)</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MoveCmpPrd_CancCompMove-integer-1_epm.html'>fT2_PRD_MoveCmpPrd_CancCompMove&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MoveCmpPrd_PkgValidate-integer-1_epm.html'>fT2_PRD_MoveCmpPrd_PkgValidate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MoveCmpPrd_Validation-integer-1_epm.html'>fT2_PRD_MoveCmpPrd_Validation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/fTT_InvoicePrint-integer-1_epm.html'>fTT_InvoicePrint&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fTT_PRV_GetNextActions-unknownarray-1_epm.html'>fTT_PRV_GetNextActions?[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_DSC_FreeUnit_EventRateAndStore_Queued-integer-1_epm.html'>fT2_DSC_FreeUnit_EventRateAndStore_Queued&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_ACT_Provisioning.Day01_Test-integer-1_epm.html'>utT2_FU_ACT_Provisioning.Day01_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRD_Stamp_ActiveDate_CompProd-integer-1_epm.html'>fTT_PRD_Stamp_ActiveDate_CompProd&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRV_CBDirectUpdate-integer-1_epm.html'>fTT_PRV_CBDirectUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_GetRatingDiscounts-unknownhash-1_epm.html'>fT2_DSC_GetRatingDiscounts?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_Vlatko_CreatePostpaidCustomerTest-integer-1_epm.html'>utT2_Vlatko_CreatePostpaidCustomerTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Expr_20005995_00000002-integer-1_epm.html'>fagEVS_Expr_20005995_00000002&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSS_ADSLProvReqMsg-integer-1_epm.html'>fT2_PRV_SSS_ADSLProvReqMsg&</a>
+# |html Subtotal - sS_T2_BIL_TotalChargesVATAmtPerServicePerVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_CustomerUpdateReq-integer-1_epm.html'>fT2_CC_CustomerUpdateReq&</a>
+# |html Subtotal - sS_T2_TimeBandEvtAmountExclVAT#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRD_RCNRCTariffName-stringhash-1_epm.html'>fTT_PRD_RCNRCTariffName${}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PAY_ReasonCodePostCommitElig-integer-1_epm.html'>fT2_PAY_ReasonCodePostCommitElig&</a>
+# |html Tariff - tT2_Wireline_Canc_NRC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgKeepOrRemoveCmp-integer-1_epm.html'>fT2_PRD_PkgKeepOrRemoveCmp&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_ADJ_Offset_Adjustment-integer-1_epm.html'>fT2_ADJ_Offset_Adjustment&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_CustUpdate-integer-1_epm.html'>fT2_CC_CustUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INT_TRECustomerCreate-integer-1_epm.html'>fT2_INT_TRECustomerCreate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/fTT_InvoicePrintRevoke-integer-1_epm.html'>fTT_InvoicePrintRevoke&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FUMA_TaskOutput_IA_FLFM_PCBC_Test-integer-1_epm.html'>utT2_FU_FUMA_TaskOutput_IA_FLFM_PCBC_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CloseQuery-integer-1_epm.html'>fT2_PRV_CloseQuery&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_AttrRef_20000169-unknownarray-1_epm.html'>fagEVS_AttrRef_20000169?[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_ADJ_QryOneOffGenerateCharge-real-1_epm.html'>fTT_ADJ_QryOneOffGenerateCharge#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FLFM_Example.Day02_RateFileSetup-integer-1_epm.html'>utT2_FU_FLFM_Example.Day02_RateFileSetup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Def_20002044_00000021-unknown-1_epm.html'>fagEVS_Def_20002044_00000021?</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTKT_TicketStatus-unknownarray-1_epm.html'>fTKT_TicketStatus?[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTKT_ValidateStatusChange-integer-1_epm.html'>fTKT_ValidateStatusChange&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_UTA_FreeUnit_Activation-integer-1_epm.html'>fT2_DSC_UTA_FreeUnit_Activation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Def_20004358_00000021-unknown-1_epm.html'>fagEVS_Def_20004358_00000021?</a>
+# |html Tariff - tT2_RAT_Charity_TaxRate#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FLFM_Example.Day00_CustomerValuesTest-integer-1_epm.html'>utT2_FU_FLFM_Example.Day00_CustomerValuesTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FLFM_Example.Day00_PersonValuesTest-integer-1_epm.html'>utT2_FU_FLFM_Example.Day00_PersonValuesTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FLFM_Example.Day00_ProductValuesTest-integer-1_epm.html'>utT2_FU_FLFM_Example.Day00_ProductValuesTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_WirelineUsageEligible-integer-1_epm.html'>fT2_RAT_WirelineUsageEligible&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_Ajay_OSTK6XWKH6.Day00_PersonValuesTest-integer-1_epm.html'>utT2_FU_Ajay_OSTK6XWKH6.Day00_PersonValuesTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_Ajay_OSTK6XWKH6.Day00_CustomerValuesTest-integer-1_epm.html'>utT2_FU_Ajay_OSTK6XWKH6.Day00_CustomerValuesTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_Ajay_OSTK6XWKH6.Day00_ProductValuesTest-integer-1_epm.html'>utT2_FU_Ajay_OSTK6XWKH6.Day00_ProductValuesTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_INT_FetchCPSProductDetails_R-unknownarray-2_epm.html'>fT2_INT_FetchCPSProductDetails_R?[] (2)</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_GetCPSOrderInfo-unknownhash-1_epm.html'>fT2_PRD_GetCPSOrderInfo?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEPMUnit_T2_RateFile_WirelineVoiceIntl-integer-1_epm.html'>fEPMUnit_T2_RateFile_WirelineVoiceIntl&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Cancel_ListItems_VersionIsResult-integer-1_epm.html'>fT2_DSC_Cancel_ListItems_VersionIsResult&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utfT2_DSC_GetFreeUnitPeriod_Test-integer-1_epm.html'>utfT2_DSC_GetFreeUnitPeriod_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_CLPUpdate-integer-1_epm.html'>fT2_PRD_CLPUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Aggregate_FreeUnit-real-1_epm.html'>fT2_DSC_Aggregate_FreeUnit#</a>
+# |html Subtotal - sCN_T2_DSC_GetCharge#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/T2_PRV/fT2_PRV_CAP_SendCustomerMsg-integer-1_epm.html'>fT2_PRV_CAP_SendCustomerMsg&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_GoranTest-integer-1_epm.html'>utT2_GoranTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ProvidentAddNonCLPToHash-unknownhash-1_epm.html'>fT2_PRV_ProvidentAddNonCLPToHash?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_CheckVersion-integer-1_epm.html'>fT2_DSC_CheckVersion&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_DirectDebit_Insert-integer-1_epm.html'>fT2_CC_DirectDebit_Insert&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_CompProd-integer-1_epm.html'>fT2_PRD_MultiProdOrd_CompProd&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_FreeUnit_Inq-integer-1_epm.html'>fT2_DSC_FreeUnit_Inq&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgDefaultDisplay-integer-1_epm.html'>fT2_PRD_PkgDefaultDisplay&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Expr_20003845_00000002-integer-1_epm.html'>fagEVS_Expr_20003845_00000002&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_ServiceNameWithCountryCodePrefix-stringarray-1_epm.html'>fT2_PRD_ServiceNameWithCountryCodePrefix$[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Def_20000124_00000006-unknown-1_epm.html'>fagEVS_Def_20000124_00000006?</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_UpdateCPSStatus-integer-1_epm.html'>fT2_PRD_UpdateCPSStatus&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_ValidateCampaignCode-integer-1_epm.html'>fT2_PRD_ValidateCampaignCode&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRV_OHActionFunction-integer-1_epm.html'>fTT_PRV_OHActionFunction&</a>
+# |html Subtotal - sCN_T2_BIL_ProdCancVATPerVatRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_MainServCancelled-integer-1_epm.html'>fT2_PRD_MultiProdOrd_MainServCancelled&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTKT_FinaliseReleaseTickets-integer-1_epm.html'>fTKT_FinaliseReleaseTickets&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_TRT_FindCollectionAgency-integer-1_epm.html'>fT2_TRT_FindCollectionAgency&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Expr_20005994_00000001-integer-1_epm.html'>fagEVS_Expr_20005994_00000001&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_ADJ_QryOneOffDelete-integer-1_epm.html'>fTT_ADJ_QryOneOffDelete&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRD_RCNRCRetrieve-realhash-2_epm.html'>fTT_PRD_RCNRCRetrieve#{} (2)</a>
+# |html Subtotal - sS_T2_BIL_TotUpldVolPerServicePerVatRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_EQUI_Change_QuarantinePeriodUpdate-integer-1_epm.html'>fTT_EQUI_Change_QuarantinePeriodUpdate&</a>
+# |html Tariff - tT2_UTA_ArrQuaPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRD_Prod_Activation-integer-1_epm.html'>fTT_PRD_Prod_Activation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSSGetAdditionalDetails-stringhash-1_epm.html'>fT2_PRV_SSSGetAdditionalDetails${}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_RAT_Get_DSCLevel-integer-1_epm.html'>fT2_DSC_RAT_Get_DSCLevel&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgGetComponentsNotCancelled-unknownarray-1_epm.html'>fT2_PRD_PkgGetComponentsNotCancelled?[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_StatusTransPermitted-integer-1_epm.html'>fT2_CC_StatusTransPermitted&</a>
+# |html Subtotal - sS_T2_BIL_UsageDiscountExclVAT#
+# |html Subtotal - sS_T2_BIL_EventCountPerCallTypePerUnitPrice&{}
+# |html Derived Attribute - lcniCLEC_Exemptions&
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_FmtProductName-string-1_epm.html'>fCMN_FmtProductName$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fSC_NQ_CustInsertNotify-integer-1_epm.html'>fSC_NQ_CustInsertNotify&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fadjiCMN_EventTaxAdjGLCode-integer-1_epm.html'>fadjiCMN_EventTaxAdjGLCode&</a>
+# |html Tariff - tT2_ADSL_ArrAnnPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fpiiIP_B_EndPort_Elig-integer-1_epm.html'>fpiiIP_B_EndPort_Elig&</a>
+# |html Tariff - tT2_PRD_OneOffCharges#
+# |html Subtotal - sS_T2_BIL_TotVolPerServicePerVatRate#{}
+# |html Subtotal - sS_T2_BIL_ExclVATSetupFee#{}
+# |html Subtotal - sS_T2_BIL_UsageDiscountVATAmt#
+# |html Tariff - tT2_UTA_AdvQuaPro_RC#
+# |html Tariff - tT2_Data_ArrBiAPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_EQUI_BlockReservationForCustomerValidation-integer-1_epm.html'>fT2_EQUI_BlockReservationForCustomerValidation&</a>
+# |html Subtotal - sS_T2_BIL_TotalOtherChargesVATAmtPerVATRate#{}
+# |html Tariff - tT2_Wireline_ArrQuaPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fcniCMN_PAY_PapAction-integer-1_epm.html'>fcniCMN_PAY_PapAction&</a>
+# |html Subtotal - sS_T2_BIL_RecurringChgVATAmtChgPerVATRate#{}
+# |html Subtotal - sS_T2_BIL_TotalChgVATAmtFreePhonePerAnsNum#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_IncludeUsageRCTariffType-integer-1_epm.html'>fT2_BIL_IncludeUsageRCTariffType&</a>
+# |html Subtotal - sS_T2_BIL_TotNumFreePhoneCallsPerOrigLocPerAnsNum&{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSS_ADSLAddServiceToReqHash-integer-1_epm.html'>fT2_PRV_SSS_ADSLAddServiceToReqHash&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgChangeComponents-integer-1_epm.html'>fT2_PRD_PkgChangeComponents&</a>
+# |html Tariff - tT2_ADSL_ArrQuaPro_RC#
+# |html Tariff - tT2_DSC_NoP_RC#
+# |html Tariff - tT2_ADSL_AdvSemPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_S_Calculate_Charge-real-1_epm.html'>fT2_DSC_S_Calculate_Charge#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCLEC_NE_GetTaxFlds-integer-1_epm.html'>fCLEC_NE_GetTaxFlds&</a>
+# |html Subtotal - sS_T2_BIL_ExclVATPerCallTypePerUnitPrice#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fcqiGSM_SSPost-integer-1_epm.html'>fcqiGSM_SSPost&</a>
+# |html Tariff - tT2_Wireline_AdvAnnPro_RC#
+# |html Subtotal - sS_T2_BIL_InvDurPerCallTypeTimebandVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_CheckMandatoryMSC-integer-1_epm.html'>fT2_PRD_CheckMandatoryMSC&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MoveCmpPrd_Wrp-integer-1_epm.html'>fT2_PRD_MoveCmpPrd_Wrp&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fGSM_AXE10_SSRegister-integer-1_epm.html'>fGSM_AXE10_SSRegister&</a>
+# |html Subtotal - sS_T2_TimeBandEvtCountDurationt&{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_CampaignUpdate-integer-1_epm.html'>fT2_PRD_CampaignUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_Get_Contract_DefData-integer-1_epm.html'>fT2_CC_Get_Contract_DefData&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_PRV_RaiseQuery-integer-1_epm.html'>fT2_PRV_RaiseQuery&</a>
+# |html Subtotal - sS_T2_BIL_TotalBytesPerCallTypeTimebandVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Get_NumofProducts-integerhash-1_epm.html'>fT2_DSC_Get_NumofProducts&{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgAutoSellComponents-integer-1_epm.html'>fT2_PRD_PkgAutoSellComponents&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_RefLookup-integer-1_epm.html'>fCMN_RefLookup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_CC_CustomerStatusUpdate-integer-1_epm.html'>fT2_CC_CustomerStatusUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_GoranSetup-integer-1_epm.html'>utT2_FU_GoranSetup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_ADSLPhCheck-integer-1_epm.html'>fT2_PRD_ADSLPhCheck&</a>
+# |html Tariff - tT2_UTA_ArrAnnPro_RC#
+# |html Subtotal - sS_T2_BIL_DSL_TimeBandEvtAmountExclVAT#{}
+# |html Subtotal - sS_T2_BIL_TotNumFreePhoneCallsPerAnsNumPerCallDate&{}
+# |html Tariff - tT2_Data_ArrAnnPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_S_CalculateCharge-real-1_epm.html'>fT2_DSC_S_CalculateCharge#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INV_HU_OCRCheckDigits-unknownhash-1_epm.html'>fT2_INV_HU_OCRCheckDigits?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_PROV_TD_SdaElig-integer-1_epm.html'>fCMN_PROV_TD_SdaElig&</a>
+# |html Tariff - tT2_ADSL_AdvMonPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgCancelCurrAndFutureCmp-integer-1_epm.html'>fT2_PRD_PkgCancelCurrAndFutureCmp&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_SU_GenerateOneOffQry-integer-1_epm.html'>fCMN_SU_GenerateOneOffQry&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MoveCmpPrd-integer-1_epm.html'>fT2_PRD_MoveCmpPrd&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_CC_ServiceStatusUpdate-integer-1_epm.html'>fT2_CC_ServiceStatusUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_Ajay_OSTK6XWKH6Setup-integer-1_epm.html'>utT2_FU_Ajay_OSTK6XWKH6Setup&</a>
+# |html Tariff - tT2_ADSL_AdvAnnPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_UTA_FreeUnit_Upgrade-integer-1_epm.html'>fT2_DSC_UTA_FreeUnit_Upgrade&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgChangeValidation-integer-1_epm.html'>fT2_PRD_PkgChangeValidation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_Vlatko_CreateBusinessCustomerTest-integer-1_epm.html'>utT2_Vlatko_CreateBusinessCustomerTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgCancelComponents-integer-1_epm.html'>fT2_PRD_PkgCancelComponents&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_DirectAccessActionFunction-integer-1_epm.html'>fT2_PRV_DirectAccessActionFunction&</a>
+# |html Tariff - tT2_UTA_AdvSemPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_PROV_IsLegalStatusChange-integer-1_epm.html'>fCMN_PROV_IsLegalStatusChange&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fGSM_TAPIn_IsEligCharge-integer-1_epm.html'>fGSM_TAPIn_IsEligCharge&</a>
+# |html Tariff - tT2_Wireline_ArrMonPro_RC#
+# |html Tariff - tT2_Wireline_AdvMonPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fcpiSC_PC_CPINotifyAct-integer-1_epm.html'>fcpiSC_PC_CPINotifyAct&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INV_ScreenedNumber-integer-1_epm.html'>fT2_INV_ScreenedNumber&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fcqiCLEC_QryOneOffCharge-integer-1_epm.html'>fcqiCLEC_QryOneOffCharge&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_Service_Status-integerarray-1_epm.html'>fT2_CC_Service_Status&[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fGSM_AXE10_SSActivate-integer-1_epm.html'>fGSM_AXE10_SSActivate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_PreCommit-integer-1_epm.html'>fT2_PRV_PreCommit&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_Process-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Process&</a>
+# |html Tariff - tT2_Data_ArrSemPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/fT2_INV_InvoiceRevoke-integer-1_epm.html'>fT2_INV_InvoiceRevoke&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_TRT_GenerateLetterQuery-integer-1_epm.html'>fCMN_TRT_GenerateLetterQuery&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_CustStatus_Permitted-integer-1_epm.html'>fT2_CC_CustStatus_Permitted&</a>
+# |html Subtotal - sS_T2_BIL_TotChgFreePhoneInclVatPerAnsNumPerCallDate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_MSG_AddAttributes-integer-1_epm.html'>fTT_MSG_AddAttributes&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_MSG_AddAttributes_Batch-integer-1_epm.html'>fTT_MSG_AddAttributes_Batch&</a>
+# |html Subtotal - sS_T2_BIL_TotDnldVolPerServicePerVatRate#{}
+# |html Tariff - tT2_Data_ArrMonPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fcqiGSM_SSPre-integer-1_epm.html'>fcqiGSM_SSPre&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_CheckMandatoryStatusReason-integer-1_epm.html'>fT2_PRD_CheckMandatoryStatusReason&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_dTT_MSG_Type_Send_Method-integer-1_epm.html'>fTT_dTT_MSG_Type_Send_Method&</a>
+# |html Subtotal - sS_T2_BIL_TotVatChgFreePhonePerOrigLocPerAnsNum#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_CheckTariffEligibilityUpdation-integer-1_epm.html'>fT2_PRD_CheckTariffEligibilityUpdation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_TriggerDDInfo-integer-1_epm.html'>fT2_CC_TriggerDDInfo&</a>
+# |html Subtotal - sS_T2_BIL_UsageChgVATAmtVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_MSG_ProductMessage-integer-1_epm.html'>fTT_MSG_ProductMessage&</a>
+# |html Tariff - tT2_TAX_NRCActivation#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_AllOneTimeAndNRC-integer-1_epm.html'>fT2_BIL_AllOneTimeAndNRC&</a>
+# |html Tariff - tT2_ADSL_Act_NRC#
+# |html Subtotal - sS_T2_BIL_InvDurCallTypePerVatRate#{}
+# |html Tariff - tT2_Wireline_ArrBiAPro_RC#
+# |html Tariff - tT2_Wireline_ArrAnnPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_PROV_TD_FgElig-integer-1_epm.html'>fCMN_PROV_TD_FgElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fpiiSC_PC_ProdInsNotifyAct-integer-1_epm.html'>fpiiSC_PC_ProdInsNotifyAct&</a>
+# |html Subtotal - sS_T2_BIL_TotalChgExclVATFreePhonePerAnsNum#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CapDirectUpdate-integer-1_epm.html'>fT2_PRV_CapDirectUpdate&</a>
+# |html Subtotal - sS_T2_BIL_UploadedBytesPerCallTypePerUnitPrice&{}
+# |html Subtotal - sS_T2_BIL_TotalChgExclVATFreePhonePerOrigLoc#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Check_ProductType-integerhash-1_epm.html'>fT2_DSC_Check_ProductType&{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_PROV_TD_PiElig-integer-1_epm.html'>fCMN_PROV_TD_PiElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_CompProd_Update-integer-1_epm.html'>fT2_PRD_MultiProdOrd_CompProd_Update&</a>
+# |html Tariff - tT2_TAX_NRCCancellation#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MoveCmpPrd_MoveValidCnt-integer-1_epm.html'>fT2_PRD_MoveCmpPrd_MoveValidCnt&</a>
+# |html Tariff - tT2_ADSL_Canc_NRC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_IsChargeRCorNRC-integer-1_epm.html'>fT2_BIL_IsChargeRCorNRC&</a>
+# |html Tariff - tT2_Data_AdvQuaPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fGSM_PublicHoliday-integer-1_epm.html'>fGSM_PublicHoliday&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fcniCMN_PAY_PapUC-integer-1_epm.html'>fcniCMN_PAY_PapUC&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fpsiSC_PC_PrdInsSrvNotifyAct-integer-1_epm.html'>fpsiSC_PC_PrdInsSrvNotifyAct&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSS_AddAllCmpPrdToReqHash-integer-1_epm.html'>fT2_PRV_SSS_AddAllCmpPrdToReqHash&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_INT_SSS_UpdateProdServ_R-integer-1_epm.html'>fT2_INT_SSS_UpdateProdServ_R&</a>
+# |html Subtotal - sS_T2_BIL_DSL_TimeBandEvtCountDurationt&{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_Rebuild-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Rebuild&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_CheckDuplicateService-integer-1_epm.html'>fT2_PRD_CheckDuplicateService&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ProvidentGetResponseStatus-integer-1_epm.html'>fT2_PRV_ProvidentGetResponseStatus&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MoveCmpPrd_CompProd-integer-1_epm.html'>fT2_PRD_MoveCmpPrd_CompProd&</a>
+# |html Tariff - tT2_ADSL_ArrSemPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fSC_NQ_CustDeleteNotify-integer-1_epm.html'>fSC_NQ_CustDeleteNotify&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_ProductUpdateService-integer-1_epm.html'>fT2_PRD_ProductUpdateService&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fGSM_AXE10_SSErase-integer-1_epm.html'>fGSM_AXE10_SSErase&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_BIL_ScheduleUpdateTest-integer-1_epm.html'>utT2_BIL_ScheduleUpdateTest&</a>
+# |html Subtotal - sS_T2_BIL_TotVatChgFreePhonePerAnsNumPerCallDate#{}
+# |html Subtotal - sS_T2_BIL_VATAmountPerCallTypePerUnitPrice#{}
+# |html Tariff - tT2_TAX_CN_OneOffCharges#
+# |html Subtotal - sS_T2_BIL_TotCallDurFreePhonePerOrigLocPerAnsNum#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fadjiCMN_EventTaxAdjTypeId-integer-1_epm.html'>fadjiCMN_EventTaxAdjTypeId&</a>
+# |html Subtotal - sS_T2_BIL_DurFreePhonePerOrigLoc#{}
+# |html Subtotal - sS_T2_BIL_TotCallDurFreePhonePerAnsNumPerCallDate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_IsReqDependent-integer-1_epm.html'>fT2_PRV_IsReqDependent&</a>
+# |html Tariff - tT2_Data_AdvAnnPro_RC#
+# |html Subtotal - sS_T2_BIL_RecurringChgExclVATPerVATRate#{}
+# |html Tariff - tT2_Data_Act_NRC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fSC_DS_ServDeleteNotify-integer-1_epm.html'>fSC_DS_ServDeleteNotify&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ProvidentAddCLPToHash-unknownhash-1_epm.html'>fT2_PRV_ProvidentAddCLPToHash?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fSC_PB_AccHistoryFetchById-integer-1_epm.html'>fSC_PB_AccHistoryFetchById&</a>
+# |html Tariff - tT2_Wireline_AdvQuaPro_RC#
+# |html Subtotal - sS_T2_BIL_DurFreePhonePerAnsNum#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_UTA_CopyAddressBToAddressA-integer-1_epm.html'>fT2_PRD_UTA_CopyAddressBToAddressA&</a>
+# |html Tariff - tT2_UTA_ArrBiAPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ProvidentPopulateRequestHash-unknownhash-1_epm.html'>fT2_PRV_ProvidentPopulateRequestHash?{}</a>
+# |html Tariff - tT2_UTA_ArrMonPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_ANumberChgUpdate-integer-1_epm.html'>fT2_PRD_ANumberChgUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_MSG_AddAttributes_ServicePhoneNumber-integer-1_epm.html'>fTT_MSG_AddAttributes_ServicePhoneNumber&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fGSM_TOD_Rateband-integer-1_epm.html'>fGSM_TOD_Rateband&</a>
+# |html Subtotal - sS_T2_BIL_CallTypeVATChgPerVatRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fGSM_TAP_ChargedItem-string-1_epm.html'>fGSM_TAP_ChargedItem$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_UpdateServiceElement-integer-1_epm.html'>fT2_RAT_UpdateServiceElement&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fpiiCLEC_ActiveProspCustAct-integer-1_epm.html'>fpiiCLEC_ActiveProspCustAct&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fGSM_FreeUnitEligibleEvent-integer-1_epm.html'>fGSM_FreeUnitEligibleEvent&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_NEDecode-integer-1_epm.html'>fT2_RAT_NEDecode&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_INT_ValidateServiceNameRange_R-integer-1_epm.html'>fT2_INT_ValidateServiceNameRange_R&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRD_CheckServiceNumberString-integer-1_epm.html'>fTT_PRD_CheckServiceNumberString&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_PrePostPaidRef-integer-1_epm.html'>fT2_CC_PrePostPaidRef&</a>
+# |html Tariff - tT2_TAX_OneOffCharges#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_PROV_UpdatePrdPre-integer-1_epm.html'>fCMN_PROV_UpdatePrdPre&</a>
+# |html Subtotal - sS_T2_BIL_CountFreePhonePerOrigLoc&{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fTT_PRD_MultiProdOrd_CompProd_Add-integer-1_epm.html'>fTT_PRD_MultiProdOrd_CompProd_Add&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fSC_NQ_ServInsertNotify-integer-1_epm.html'>fSC_NQ_ServInsertNotify&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fGSM_TAP_RecordTypeMO_SMS-integer-1_epm.html'>fGSM_TAP_RecordTypeMO_SMS&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CustomerHasCompProduct-integer-1_epm.html'>fT2_PRV_CustomerHasCompProduct&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CAP_ModifyAccessMsg-integer-1_epm.html'>fT2_PRV_CAP_ModifyAccessMsg&</a>
+# |html Subtotal - sS_T2_BIL_DSL_TimeBandEvtAmountVAT#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSS_CompProdReqStructType-integer-1_epm.html'>fT2_PRV_SSS_CompProdReqStructType&</a>
+# |html Subtotal - sCN_T2_BIL_TotalNonTaxableCharges#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Cancel_ListItems-integer-1_epm.html'>fT2_DSC_Cancel_ListItems&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_WirelineUTDriver-real-1_epm.html'>fT2_RAT_WirelineUTDriver#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_IVR_CommonCPS-unknownarray-1_epm.html'>fT2_IVR_CommonCPS?[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_DD_Cancellations-integer-1_epm.html'>fT2_CC_DD_Cancellations&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MoveCmpPrd_CancBaseProd-integer-1_epm.html'>fT2_PRD_MoveCmpPrd_CancBaseProd&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_PkgChkCmpExistsFuture-integer-1_epm.html'>fT2_PRD_PkgChkCmpExistsFuture&</a>
+# |html Tariff - tT2_ADSL_ArrBiAPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fCMN_PROV_TrtSuspendProduct-integer-1_epm.html'>fCMN_PROV_TrtSuspendProduct&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_VerifyPermissions-integer-1_epm.html'>fT2_CC_VerifyPermissions&</a>
+# |html Tariff - tT2_CN_OneOffCharges#
+# |html Tariff - tT2_Wireline_AdvSemPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_CLPInsert-integer-1_epm.html'>fT2_PRD_CLPInsert&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Bill_Usage_Charge-real-1_epm.html'>fT2_DSC_Bill_Usage_Charge#</a>
+# |html Subtotal - sS_T2_BIL_CountCallTypePerVatRate&{}
+# |html Subtotal - sS_T2_BIL_TotChgFreePhoneExclVatPerOrigLocPerAnsNum#{}
+# |html Tariff - tT2_TAX_Usage#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fGSM_AXE10_SSDeactivate-integer-1_epm.html'>fGSM_AXE10_SSDeactivate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_MSG_Direct_Debit_Note-integer-1_epm.html'>fTT_MSG_Direct_Debit_Note&</a>
+# |html Tariff - tT2_ADSL_ArrMonPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSS_PhoneNumberType-integer-1_epm.html'>fT2_PRV_SSS_PhoneNumberType&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_PRV_ActionDispatcher-integer-1_epm.html'>fT2_PRV_ActionDispatcher&</a>
+# |html Subtotal - sS_T2_BIL_UsageChgExclVATPerCallTypeTimebandVATRate#{}
+# |html Subtotal - sCN_TT_BIL_OverPayments#{}
+# |html Tariff - tT2_BIL_UsageRoundingCorrection#
+# |html Subtotal - sS_T2_RecurringChargesVATPerVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSS_ADSLGetServiceInstanceIdFromReq-integer-1_epm.html'>fT2_PRV_SSS_ADSLGetServiceInstanceIdFromReq&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Prod_ActiveMths-real-1_epm.html'>fT2_DSC_Prod_ActiveMths#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_CN_CalculateCharge-real-1_epm.html'>fT2_DSC_CN_CalculateCharge#</a>
+# |html Tariff - tT2_UTA_AdvBiAPro_RC#
+# |html Subtotal - sS_T2_BIL_UsageChgVATAmtPerCallTypeTimebandVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ProvidentUpdateRequestToFailed-integer-1_epm.html'>fT2_PRV_ProvidentUpdateRequestToFailed&</a>
+# |html Subtotal - sS_T2_BIL_UsageChgExclVATVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_IsDefinedForCountry-integer-1_epm.html'>fT2_PRD_IsDefinedForCountry&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fSIL_ShowMOTD-integer-1_epm.html'>fSIL_ShowMOTD&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fSIL_MOTD_ParamValidate-integer-1_epm.html'>fSIL_MOTD_ParamValidate&</a>
+# |html Tariff - tT2_Data_AdvMonPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fpiiCLEC_ActiveServAddrAct-integer-1_epm.html'>fpiiCLEC_ActiveServAddrAct&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_PROV_TD_CpiElig-integer-1_epm.html'>fCMN_PROV_TD_CpiElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_Allow_Action-integer-1_epm.html'>fT2_Allow_Action&</a>
+# |html Subtotal - sS_T2_BIL_VATAmountSetupFee#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_DataUsageRating-real-1_epm.html'>fT2_RAT_DataUsageRating#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Validate_BillCycle-integer-1_epm.html'>fT2_DSC_Validate_BillCycle&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INV_RefNumber-string-1_epm.html'>fT2_INV_RefNumber$</a>
+# |html Subtotal - sS_T2_BIL_OneOffChgVATAmtPerVATRate#{}
+# |html Tariff - tT2_ADSL_AdvBiAPro_RC#
+# |html Tariff - tT2_Wireline_AdvBiAPro_RC#
+# |html Subtotal - sS_T2_BIL_TotChgFreePhoneInclVatPerOrigLocPerAnsNum#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEV_ProdInstComplete-integer-1_epm.html'>zEV_ProdInstComplete&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSS_ProvisionRequest-integer-1_epm.html'>fT2_PRV_SSS_ProvisionRequest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INT_ST_OrderValidation-integer-1_epm.html'>fT2_INT_ST_OrderValidation&</a>
+# |html Subtotal - sS_T2_BIL_EventCountSetupFee&{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_PRD_MoveCmpPrd_ProductMove-integer-1_epm.html'>fT2_PRD_MoveCmpPrd_ProductMove&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CAP_CC-integer-1_epm.html'>fT2_PRV_CAP_CC&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_CheckOriginal-integer-1_epm.html'>zEVS_CheckOriginal&</a>
+# |html Tariff - tT2_UTA_AdvMonPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_ExcludeTariffType-integer-1_epm.html'>fT2_BIL_ExcludeTariffType&</a>
+# |html Tariff - tT2_Data_ArrQuaPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_UpdateCPSList-integer-1_epm.html'>fT2_PRD_UpdateCPSList&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CAP_CPerson-integer-1_epm.html'>fT2_PRV_CAP_CPerson&</a>
+# |html Subtotal - sS_T2_BIL_DurPerCallTypeTimebandVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MoveCmpPrd_MovableProd-integer-1_epm.html'>fT2_PRD_MoveCmpPrd_MovableProd&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_BIL_IncludeOneOffCharge-integer-1_epm.html'>fTT_BIL_IncludeOneOffCharge&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fadjiCMN_EventCreditTotal-integer-1_epm.html'>fadjiCMN_EventCreditTotal&</a>
+# |html Subtotal - sS_T2_BIL_TotalChgVATAmtFreePhonePerOrigLoc#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_IncludeDiscountTariffType-integer-1_epm.html'>fT2_BIL_IncludeDiscountTariffType&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_BuildRequestHash-integer-1_epm.html'>fT2_PRV_BuildRequestHash&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CreateProvidentHash-unknownhash-1_epm.html'>fT2_PRV_CreateProvidentHash?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_Customer_Display-integer-1_epm.html'>fT2_CC_Customer_Display&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fSC_PR_Convert-integer-1_epm.html'>fSC_PR_Convert&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/feiSC_PC_EquipNotifyElig-integer-1_epm.html'>feiSC_PC_EquipNotifyElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_EnsureStringLiteral-integer-1_epm.html'>zEVS_EnsureStringLiteral&</a>
+# |html Tariff - tT2_UTA_ArrSemPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_GenChildAttrDefaultFunctions-integer-1_epm.html'>zEVS_GenChildAttrDefaultFunctions&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fUTL_GetNextVarOrFnToken-integer-1_epm.html'>fUTL_GetNextVarOrFnToken&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fcniCMN_PAY_Field_Validation-integer-1_epm.html'>fcniCMN_PAY_Field_Validation&</a>
+# |html Subtotal - sS_T2_BIL_UploadedBytesPerCallTypeTimebandVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_INV_FmtProductName-integer-1_epm.html'>fCMN_INV_FmtProductName&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.generate.DDPaymentRejection-string-1_epm.html'>ut.msg.generate.DDPaymentRejection$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_GetContact_Info-string-1_epm.html'>fT2_CC_GetContact_Info$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FUMA_Future_Activation_Test-integer-1_epm.html'>utT2_FU_FUMA_Future_Activation_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fUTL_GetNextOperatorToken-integer-1_epm.html'>fUTL_GetNextOperatorToken&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSSMapActionReq-unknownhash-1_epm.html'>fT2_PRV_SSSMapActionReq?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ffgiiCLEC_NetworkChngQryElig-integer-1_epm.html'>ffgiiCLEC_NetworkChngQryElig&</a>
+# |html Tariff - tT2_Data_Canc_NRC#
+# |html Tariff - tT2_ADSL_AdvQuaPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_GetServiceElement-string-1_epm.html'>fT2_RAT_GetServiceElement$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Assign_DscType-string-1_epm.html'>fT2_DSC_Assign_DscType$</a>
+# |html Subtotal - sS_T2_BIL_UsageDiscountExclVATPerVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_IncludeUsageRCEventClass-integer-1_epm.html'>fT2_BIL_IncludeUsageRCEventClass&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCLEC_RatePlanElig-integer-1_epm.html'>fCLEC_RatePlanElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_ConvertReal-unknown-1_epm.html'>zEVS_ConvertReal?</a>
+# |html Tariff - tT2_TAX_Recurring#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_PRV_EmailMove-integer-1_epm.html'>fT2_PRV_EmailMove&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ProvidentRespHandlerCLP-integer-1_epm.html'>fT2_PRV_ProvidentRespHandlerCLP&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fSC_DS_ProdInsDeleteNotify-integer-1_epm.html'>fSC_DS_ProdInsDeleteNotify&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ffgiiSC_PC_FGINotifyAct-integer-1_epm.html'>ffgiiSC_PC_FGINotifyAct&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/fT2_InvoiceAllocateCustomers-integer-1_epm.html'>fT2_InvoiceAllocateCustomers&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fpiiCLEC_NetworkWorkReqElig-integer-1_epm.html'>fpiiCLEC_NetworkWorkReqElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_TaxClass_ZipCode-integer-2_epm.html'>fT2_CC_TaxClass_ZipCode& (2)</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fpiiCLEC_ActiveProductElig-integer-1_epm.html'>fpiiCLEC_ActiveProductElig&</a>
+# |html Tariff - tT2_Wireline_AdvMonNoP_RC#
+# |html Tariff - tT2_Wireline_ArrMonNoP_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fSC_NQ_CustContUpdateNotify-integer-1_epm.html'>fSC_NQ_CustContUpdateNotify&</a>
+# |html Tariff - tT2_Wireline_Act_NRC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_PRV_RaiseQuery-integer-2_epm.html'>fT2_PRV_RaiseQuery& (2)</a>
+# |html Subtotal - sS_T2_BIL_DSL_TimeBandEvtCountBilledDuration&{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fUTL_Parse-integer-1_epm.html'>fUTL_Parse&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fadjiCMN_EventCreditPartial-integer-1_epm.html'>fadjiCMN_EventCreditPartial&</a>
+# |html Subtotal - sS_T2_BIL_UsageDiscountVATAmtPerVATRate#{}
+# |html Subtotal - sS_T2_BIL_InclVATPerCallTypePerUnitPrice#{}
+# |html Subtotal - sS_T2_BIL_DownloadedBytesPerCallTypePerUnitPrice#{}
+# |html Tariff - tT2_UTA_AdvAnnPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fpeiCLEC_CreateCust-integer-1_epm.html'>fpeiCLEC_CreateCust&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_SSS_ADSLInstallationDetailsType-integer-1_epm.html'>fT2_PRV_SSS_ADSLInstallationDetailsType&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.MSG.XML.AddTags.DBViews.DA.DataExtraction.Test-integer-1_epm.html'>ut.MSG.XML.AddTags.DBViews.DA.DataExtraction.Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.MSG.XML.AddTags.DBViews.DA.ERR.ColumnNotExist.Test-integer-1_epm.html'>ut.MSG.XML.AddTags.DBViews.DA.ERR.ColumnNotExist.Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_1CP_Rollover_Test-integer-1_epm.html'>utT2_FU_RAT_Single_1CP_Rollover_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_2CPs_Rollover_Test-integer-1_epm.html'>utT2_FU_RAT_Single_2CPs_Rollover_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_Initial_Status_Update-integer-1_epm.html'>fT2_PRD_Initial_Status_Update&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_OSTK_6YWDEY_Setup-integer-1_epm.html'>utT2_FU_OSTK_6YWDEY_Setup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_ConvertDate-unknown-1_epm.html'>zEVS_ConvertDate?</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_IP_CreateServiceName-integer-1_epm.html'>fCMN_IP_CreateServiceName&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fcniSC_PC_CustNotifyAct-integer-1_epm.html'>fcniSC_PC_CustNotifyAct&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CAPAutomaticUpdate-integer-1_epm.html'>fT2_PRV_CAPAutomaticUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fCMN_PROV_TrtUnSuspendProduct-integer-1_epm.html'>fCMN_PROV_TrtUnSuspendProduct&</a>
+# |html Tariff - tT2_Data_AdvBiAPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEPMUnit_T2_RateFile_WirelineVoiceNat-integer-1_epm.html'>fEPMUnit_T2_RateFile_WirelineVoiceNat&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEPMUnit_T2_CreateCustomer-integer-1_epm.html'>fEPMUnit_T2_CreateCustomer&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_CPSInsert-integer-1_epm.html'>fT2_PRD_MultiProdOrd_CPSInsert&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Monthly_Roll_LateUsgConsumesRolledOver_Test-integer-1_epm.html'>utT2_FU_RAT_Monthly_Roll_LateUsgConsumesRolledOver_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_Roll_LateUsgConsumesRolledOver_Test-integer-1_epm.html'>utT2_FU_RAT_Single_Roll_LateUsgConsumesRolledOver_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTKT_ValidateAssignment-integer-1_epm.html'>fTKT_ValidateAssignment&</a>
+# |html Subtotal - sS_T2_BIL_TotalOtherChargesExclVATPerVATRate#{}
+# |html Subtotal - sS_T2_BIL_CountPerCallTypeTimebandVATRate&{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fsiSC_PC_ServiceNotifyAct-integer-1_epm.html'>fsiSC_PC_ServiceNotifyAct&</a>
+# |html Subtotal - sS_T2_BIL_InclVATSetupFee#{}
+# |html Subtotal - sS_T2_BIL_CountFreePhonePerAnsNum&{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fsiCLEC_ADDR_ValElig-integer-1_epm.html'>fsiCLEC_ADDR_ValElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Module-integer-1_epm.html'>utT2_FU_RAT_Module&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Monthly_ConsumedOnlyIfFUMARan_Test-integer-1_epm.html'>utT2_FU_RAT_Monthly_ConsumedOnlyIfFUMARan_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_Roll_LateUsgConsumesFromNextPeriod_Test-integer-1_epm.html'>utT2_FU_RAT_Single_Roll_LateUsgConsumesFromNextPeriod_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_ConsumesOnlyFromCurrentPeriod_Test-integer-1_epm.html'>utT2_FU_RAT_Single_ConsumesOnlyFromCurrentPeriod_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Monthly_ConsumesOnlyFromCurrentPeriod_Test-integer-1_epm.html'>utT2_FU_RAT_Monthly_ConsumesOnlyFromCurrentPeriod_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_Roll_ConsumedOnlyIfFUMARan_Test-integer-1_epm.html'>utT2_FU_RAT_Single_Roll_ConsumedOnlyIfFUMARan_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Monthly_Roll_ConsumedOnlyIfFUMARan_Test-integer-1_epm.html'>utT2_FU_RAT_Monthly_Roll_ConsumedOnlyIfFUMARan_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Monthly_Roll_ConsumesOnlyFromCurrentPeriod_Test-integer-1_epm.html'>utT2_FU_RAT_Monthly_Roll_ConsumesOnlyFromCurrentPeriod_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_Roll_ConsumesOnlyFromCurrentPeriod_Test-integer-1_epm.html'>utT2_FU_RAT_Single_Roll_ConsumesOnlyFromCurrentPeriod_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_Roll_Early_ConsumesOnlyFromCurrentPeriod_Test-integer-1_epm.html'>utT2_FU_RAT_Single_Roll_Early_ConsumesOnlyFromCurrentPeriod_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Monthly_Early_ConsumesOnlyFromCurrentPeriod_Test-integer-1_epm.html'>utT2_FU_RAT_Monthly_Early_ConsumesOnlyFromCurrentPeriod_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Monthly_VeryLate_ConsumesFromCorrectPeriod_Test-integer-1_epm.html'>utT2_FU_RAT_Monthly_VeryLate_ConsumesFromCorrectPeriod_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Monthly_Roll_OutOfSequenceLateUsg_Test-integer-1_epm.html'>utT2_FU_RAT_Monthly_Roll_OutOfSequenceLateUsg_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_Roll_OutOfSequenceLateUsg_Test-integer-1_epm.html'>utT2_FU_RAT_Single_Roll_OutOfSequenceLateUsg_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Monthly_OutOfSequenceLateUsg_Test-integer-1_epm.html'>utT2_FU_RAT_Monthly_OutOfSequenceLateUsg_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_Roll_NoDupeOfRolledOver_Test-integer-1_epm.html'>utT2_FU_RAT_Single_Roll_NoDupeOfRolledOver_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_Roll_CurrentUsageConsumedRolledOver_Test-integer-1_epm.html'>utT2_FU_RAT_Single_Roll_CurrentUsageConsumedRolledOver_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_NoRatingIfStatusInFailedActivation_Test-integer-1_epm.html'>utT2_FU_RAT_NoRatingIfStatusInFailedActivation_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_Single_Roll_Exp_ConsumesOnlyFromCurrentPeriod_Test-integer-1_epm.html'>utT2_FU_RAT_Single_Roll_Exp_ConsumesOnlyFromCurrentPeriod_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fEPMUnit_CreateOneOffTask-integer-1_epm.html'>fEPMUnit_CreateOneOffTask&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEPMUnit_WaitForTask-integer-1_epm.html'>fEPMUnit_WaitForTask&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_RemapRequestedStatus-integer-1_epm.html'>fT2_CC_RemapRequestedStatus&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CAP_ProvisionCap-integer-1_epm.html'>fT2_PRV_CAP_ProvisionCap&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fUTL_GetNextNumericToken-integer-1_epm.html'>fUTL_GetNextNumericToken&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEV_ContractCancel-integer-1_epm.html'>zEV_ContractCancel&</a>
+# |html Tariff - tT2_Wireline_ArrSemPro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ProvidentRespHandlerNonProduct-integer-1_epm.html'>fT2_PRV_ProvidentRespHandlerNonProduct&</a>
+# |html Subtotal - sS_T2_BIL_DownloadedBytesPerCallTypeTimebandVATRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fpaiCMN_CreditCardUC-integer-1_epm.html'>fpaiCMN_CreditCardUC&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INV_SecretNumbersInitialization-stringhash-1_epm.html'>fT2_INV_SecretNumbersInitialization${}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_ADJ_VAT_Functional-stringarray-1_epm.html'>fT2_ADJ_VAT_Functional$[]</a>
+# |html Subtotal - sS_T2_TimeBandEvtAmountInclVAT#{}
+# |html Subtotal - sS_T2_TimeBandEvtCountBilledDuration&{}
+# |html Subtotal - sS_T2_TimeBandEvtUnitVATAmount#{}
+# |html Subtotal - sS_T2_TimeBandEvtCount&{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_GenDefaultExprFunction-integer-1_epm.html'>zEVS_GenDefaultExprFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_DTODRating-real-1_epm.html'>fT2_RAT_DTODRating#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_GenBundleCode-string-1_epm.html'>zEVS_GenBundleCode$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_FetchBankName-string-1_epm.html'>fT2_CC_FetchBankName$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTKT_ValidateFinalReviewer-integer-1_epm.html'>fTKT_ValidateFinalReviewer&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_TAX_GetVATRateAndGLCode-unknownhash-1_epm.html'>fT2_TAX_GetVATRateAndGLCode?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_ToDate-date-2_epm.html'>zEVS_ToDate~ (2)</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEV_ProdInstUpdate-integer-1_epm.html'>zEV_ProdInstUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_FreeUnit_Activation-integer-1_epm.html'>fT2_DSC_FreeUnit_Activation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_ConvertInt-unknown-1_epm.html'>zEVS_ConvertInt?</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEVS_GenFunction-integer-2_epm.html'>fEVS_GenFunction& (2)</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fUTL_GetNextAlphaToken-integer-1_epm.html'>fUTL_GetNextAlphaToken&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_IsDefinedForCountry-integer-1_epm.html'>fT2_DSC_IsDefinedForCountry&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_GetNormalisedCode-integer-1_epm.html'>zEVS_GetNormalisedCode&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_AssignRatedChargeFields-integer-1_epm.html'>fT2_RAT_AssignRatedChargeFields&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEV_ServiceCancel-integer-1_epm.html'>zEV_ServiceCancel&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_EVS_Callback-integer-1_epm.html'>fT2_EVS_Callback&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INV_OCRCheckDigits-unknownhash-1_epm.html'>fT2_INV_OCRCheckDigits?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_INV_GermanyCheckDigit-string-1_epm.html'>fT2_INV_GermanyCheckDigit$</a>
+# |html Subtotal - sCN_TT_BIL_CLP_MinimumOneOffAdjustment#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_ReplaceHashes-integer-1_epm.html'>zEVS_ReplaceHashes&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_ReplaceHashes-integer-2_epm.html'>zEVS_ReplaceHashes& (2)</a>
+# |html Subtotal - sS_T2_BIL_CallTypeExlVATChgPerVatRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_GenerateDirectDebitLetter-integer-1_epm.html'>fT2_CC_GenerateDirectDebitLetter&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_ProvidentRespHandlerProduct-integer-1_epm.html'>fT2_PRV_ProvidentRespHandlerProduct&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_MSG_AddAttributes_Customer-integer-1_epm.html'>fTT_MSG_AddAttributes_Customer&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_PRV_UpdateProvTable-integer-1_epm.html'>fTT_PRV_UpdateProvTable&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_EQUI_QuarantinePeriodUpdate-integer-1_epm.html'>fT2_EQUI_QuarantinePeriodUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fUTL_Unparse-string-1_epm.html'>fUTL_Unparse$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_GenMandatoryFunction-integer-1_epm.html'>zEVS_GenMandatoryFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTKT_AutoReassignTicket-integer-1_epm.html'>fTKT_AutoReassignTicket&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEVS_GenContractFunction-integer-1_epm.html'>fEVS_GenContractFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_FreeUnit_Inq-unknownarray-1_epm.html'>fTT_FreeUnit_Inq?[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Def_20003856_00000011-unknown-1_epm.html'>fagEVS_Def_20003856_00000011?</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Accumulate_NU_Charge-realhash-1_epm.html'>fT2_DSC_Accumulate_NU_Charge#{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_ToReal-real-2_epm.html'>zEVS_ToReal# (2)</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEVS_CustomerCore-integer-1_epm.html'>zEVS_CustomerCore&</a>
+# |html Subtotal - sS_T2_BIL_TotalChargesExclVATPerVATRatePerService#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fEPMUnit_CreateFunctionFromTemplate-integer-1_epm.html'>fEPMUnit_CreateFunctionFromTemplate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_GetATList_all-unknownarray-1_epm.html'>fT2_CC_GetATList_all?[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEPMUnit_CreateBillRun-integer-1_epm.html'>fEPMUnit_CreateBillRun&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEPMUnit_CreateBillRunOperation-integer-1_epm.html'>fEPMUnit_CreateBillRunOperation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_FetchMainServDetails-integer-1_epm.html'>fT2_PRD_MultiProdOrd_FetchMainServDetails&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/T2_PRV/fT2_PRV_ProvisionRequest-integer-1_epm.html'>fT2_PRV_ProvisionRequest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_Cust_ActiveMths-integer-1_epm.html'>fT2_DSC_Cust_ActiveMths&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEPMUnit_ActivateBillCycleProducts-integer-1_epm.html'>fEPMUnit_ActivateBillCycleProducts&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEPMUnit_RerunTest-integer-1_epm.html'>fEPMUnit_RerunTest&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_RAT_WirelineUsage-real-1_epm.html'>fT2_RAT_WirelineUsage#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_FutureDatedProvisioning-integer-1_epm.html'>fT2_PRV_FutureDatedProvisioning&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_TRT_SuspendAction-integer-1_epm.html'>fT2_TRT_SuspendAction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Expr_05000681_00000004-integer-1_epm.html'>fagEVS_Expr_05000681_00000004&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_INV_GetServiceNames-unknownhash-1_epm.html'>fTT_INV_GetServiceNames?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FUMA_CleanUp_IA_FLFM_PCBC_Test-integer-1_epm.html'>utT2_FU_FUMA_CleanUp_IA_FLFM_PCBC_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CallBarringFetch-integer-1_epm.html'>fT2_PRV_CallBarringFetch&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_GetBarringCode-string-1_epm.html'>fT2_PRV_GetBarringCode$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_TRT_GetPrvCollectionAgency-integer-1_epm.html'>fTT_TRT_GetPrvCollectionAgency&</a>
+# |html Subtotal - sCN_T2_BIL_ProdRecExclVATPerVatRate#{}
+# |html Subtotal - sCN_T2_BIL_ProdRecVATPerVatRate#{}
+# |html Subtotal - sCN_T2_BIL_ProdActExclVATPerVatRate#{}
+# |html Subtotal - sCN_T2_BIL_ProdActVATPerVatRate#{}
+# |html Subtotal - sCN_T2_BIL_ProdOneOffExclVATPerVatRate#{}
+# |html Subtotal - sCN_T2_BIL_ProdOneOffVATPerVatRate#{}
+# |html Subtotal - sCN_T2_BIL_ProdCancExclVATPerVatRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zEPMUnit_IsDebuggingEnabled-integer-1_epm.html'>zEPMUnit_IsDebuggingEnabled&</a>
+# |html Tariff - tT2_RAT_CharityNumber#
+# |html Tariff - tT2_DSC_MaxRatingCharge#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fEPMUnit_CreateBillingSchedule-integer-1_epm.html'>fEPMUnit_CreateBillingSchedule&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_RAT_ConsumeInitialActivation_Test-integer-1_epm.html'>utT2_FU_RAT_ConsumeInitialActivation_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/cantor.testdata.template.customers-integer-1_epm.html'>cantor.testdata.template.customers&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/cantor.testdata.invoicecycle.create-integer-1_epm.html'>cantor.testdata.invoicecycle.create&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biBillRunInvoiceGenerateHighVolume-integer-1_epm.html'>biBillRunInvoiceGenerateHighVolume&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zbiVariableValidateList-integer-1_epm.html'>zbiVariableValidateList&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biInvoiceDeallocateCustomers-integer-1_epm.html'>biInvoiceDeallocateCustomers&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/biBillRunStop-integer-1_epm.html'>biBillRunStop&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/TuxedoDeadlocks.GetFunction-unknownhash-1_epm.html'>TuxedoDeadlocks.GetFunction?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biBillRunTemplateOperation-integer-1_epm.html'>biBillRunTemplateOperation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_DSC_BP_FreeUnit_Activation-integer-1_epm.html'>fT2_DSC_BP_FreeUnit_Activation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biInvoicePrintRevoke-integer-1_epm.html'>biInvoicePrintRevoke&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/biUpgradeCreateBillRunStatistics-integer-1_epm.html'>biUpgradeCreateBillRunStatistics&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/BillRunSummary-unknownhash-1_epm.html'>BillRunSummary?{}</a>
+# |html Tariff - tT2_DSC_Pro_RC#
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_RCNRCChargeWrap-real-1_epm.html'>fT2_PRD_RCNRCChargeWrap#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_RAT_ChgMethod-real-1_epm.html'>fTT_RAT_ChgMethod#</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluate/fT2_DSC_GetAllowanceProductStatus-string-1_epm.html'>fT2_DSC_GetAllowanceProductStatus$</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/biEventReprocessFunctionValidate-integer-1_epm.html'>biEventReprocessFunctionValidate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.trigger.epm.fTT_MSG_Direct_Debit_Note-integer-1_epm.html'>ut.msg.trigger.epm.fTT_MSG_Direct_Debit_Note&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.trigger.epm.fT2_PAY_PaymentNotifyPostCommitAction-integer-1_epm.html'>ut.msg.trigger.epm.fT2_PAY_PaymentNotifyPostCommitAction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.trigger.epm.fT2_DD_GenerateDDRejectionQuery-integer-1_epm.html'>ut.msg.trigger.epm.fT2_DD_GenerateDDRejectionQuery&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ut.msg.trigger.epm.fT2_CC_GenerateDirectDebitLetter-integer-1_epm.html'>ut.msg.trigger.epm.fT2_CC_GenerateDirectDebitLetter&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biInvoiceImageRevoke-integer-1_epm.html'>biInvoiceImageRevoke&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_CampaignCodeProductHistoryPoC-integer-1_epm.html'>fT2_PRD_CampaignCodeProductHistoryPoC&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biBillRunExecuteForCustomer-integer-1_epm.html'>biBillRunExecuteForCustomer&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRV_CAPActionFunction-integer-1_epm.html'>fT2_PRV_CAPActionFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/biTQFWatchdogFunctionValidate-integer-1_epm.html'>biTQFWatchdogFunctionValidate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biInvoiceAllocateCustomers-integer-1_epm.html'>biInvoiceAllocateCustomers&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_Activation_FailureMessageCleanup-integer-1_epm.html'>utT2_FU_Activation_FailureMessageCleanup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_AttrRef_20009374-unknownarray-1_epm.html'>fagEVS_AttrRef_20009374?[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biBillRunInvoiceGenerate-integer-1_epm.html'>biBillRunInvoiceGenerate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/biBillRunFunctionValidate-integer-1_epm.html'>biBillRunFunctionValidate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FLFM_AdvanceFUMASetup-integer-1_epm.html'>utT2_FU_FLFM_AdvanceFUMASetup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biBillRunImmediate-integer-1_epm.html'>biBillRunImmediate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biInvoiceRevokeParallel-integer-1_epm.html'>biInvoiceRevokeParallel&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/biSubtotalUpdate-integer-1_epm.html'>biSubtotalUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_QryOneOffRemove-integer-1_epm.html'>fT2_PRD_QryOneOffRemove&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_Activation_FailureMessageSetup-integer-1_epm.html'>utT2_FU_Activation_FailureMessageSetup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/biStdFunctionValidate-integer-1_epm.html'>biStdFunctionValidate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/TuxedoDeadlocks.CheckFunction-integer-1_epm.html'>TuxedoDeadlocks.CheckFunction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/InvoiceUnapply-integer-1_epm.html'>InvoiceUnapply&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fT2_PRV_ProvidentProcessResponse-integer-1_epm.html'>fT2_PRV_ProvidentProcessResponse&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/BillRunStatistics-unknownhash-1_epm.html'>BillRunStatistics?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRW/biBillRunOperationError-integer-1_epm.html'>biBillRunOperationError&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/biEventReprocessERASFunctionValidate-integer-1_epm.html'>biEventReprocessERASFunctionValidate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/biBillRunOperationNetSummary-integer-1_epm.html'>biBillRunOperationNetSummary&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biBillRunSummary-unknownhash-1_epm.html'>biBillRunSummary?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/CustomerNodeBillRunInsertRunning-integer-1_epm.html'>CustomerNodeBillRunInsertRunning&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/InvoiceApply-integer-1_epm.html'>InvoiceApply&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_FLFM_AdvanceFUMA.Day29_FUASetup-integer-1_epm.html'>utT2_FU_FLFM_AdvanceFUMA.Day29_FUASetup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/biSubtotalVariablesUsed-stringarray-1_epm.html'>biSubtotalVariablesUsed$[]</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biRentalRevoke-integer-1_epm.html'>biRentalRevoke&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biBillRunInvoiceGenerateInterim-integer-1_epm.html'>biBillRunInvoiceGenerateInterim&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_Ajay_OSTK6XWKH6.Day02_RateFileSetup-integer-1_epm.html'>utT2_FU_Ajay_OSTK6XWKH6.Day02_RateFileSetup&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/biVariableRangeUpdate-integer-1_epm.html'>biVariableRangeUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utT2_FU_BCM_RES_Prepaid_IA_FLFM_PCBC_Test-integer-1_epm.html'>utT2_FU_BCM_RES_Prepaid_IA_FLFM_PCBC_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biInvoiceRevoke-integer-1_epm.html'>biInvoiceRevoke&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_BranchBank_CM-integer-1_epm.html'>fT2_CC_BranchBank_CM&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biBillRunInvoiceGenerateCorporate-integer-1_epm.html'>biBillRunInvoiceGenerateCorporate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biInvoicePrint-integer-1_epm.html'>biInvoicePrint&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/biReferenceCodeByLabel-integer-1_epm.html'>biReferenceCodeByLabel&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/biUpgradeCreateBillRunSchedules-integer-1_epm.html'>biUpgradeCreateBillRunSchedules&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zRefTypeGroupLastModCheck-integer-1_epm.html'>zRefTypeGroupLastModCheck&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_RCTariffEligibility-integer-1_epm.html'>fT2_PRD_RCTariffEligibility&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/utfT2_DSC_Consume_FreeUnit_Test-integer-1_epm.html'>utfT2_DSC_Consume_FreeUnit_Test&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTKT_TicketEntityAction-integer-1_epm.html'>fTKT_TicketEntityAction&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PAY_PaymentNotifyPostCommitElig-integer-1_epm.html'>fT2_PAY_PaymentNotifyPostCommitElig&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_RCChgMethod-real-1_epm.html'>fT2_PRD_RCChgMethod#</a>
+# |html Subtotal - sS_T2_BIL_TotUpldVolPerCallTypePerVatRate#{}
+# |html Subtotal - sS_T2_BIL_TotDnldVolPerCallTypePerVatRate#{}
+# |html Subtotal - sS_T2_BIL_TotVolPerCallTypePerVatRate#{}
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluate/fT2_INV_RetrieveCreditMemoDetails-integer-1_epm.html'>fT2_INV_RetrieveCreditMemoDetails&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CMN_WriteOffProportion-integer-1_epm.html'>fT2_CMN_WriteOffProportion&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_DirectDebit_Insert_Cancellation-integer-1_epm.html'>fT2_CC_DirectDebit_Insert_Cancellation&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_QryOneOffChargeRetriv-integer-1_epm.html'>fT2_PRD_QryOneOffChargeRetriv&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_Validate_BAS_Change-integer-1_epm.html'>fT2_CC_Validate_BAS_Change&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/fTT_DebitMemoPrintRevoke-integer-1_epm.html'>fTT_DebitMemoPrintRevoke&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_CC_FutureDated_Records-integer-1_epm.html'>fT2_CC_FutureDated_Records&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTT_INV_CreditAdjustmentCheck-integer-1_epm.html'>fTT_INV_CreditAdjustmentCheck&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_TRECustNodeContactAdd-integer-1_epm.html'>fT2_TRECustNodeContactAdd&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_MultiProdOrd_DeleteDA-integer-1_epm.html'>fT2_PRD_MultiProdOrd_DeleteDA&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fTKT_ValidateTicketChange-integer-1_epm.html'>fTKT_ValidateTicketChange&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_BIL_SuppressWriteOffCheck-unknownhash-1_epm.html'>fT2_BIL_SuppressWriteOffCheck?{}</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_TRT_CollQueryCreate-integer-1_epm.html'>fT2_TRT_CollQueryCreate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_PRD_UTA_Validate_ServName-integer-1_epm.html'>fT2_PRD_UTA_Validate_ServName&</a>
+# |html </pre>
+# SOURCE
+ReferenceCodeByLabel&(const ReferenceTypeLabel$, const ReferenceCodeLabel$) =
+{   # If called from client, call remote function
+    biReferenceCodeByLabel&(ReferenceTypeLabel$, ReferenceCodeLabel$);
+}
+#*****

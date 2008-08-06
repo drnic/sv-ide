@@ -9,23 +9,17 @@ class FunctionDefnParser
   
   protected
   def parse
-    lines.each do |line|
-      next if line =~ /^#/
-      # TODO - parse multi-line signatures
-      # TODO - parse description
-      parse_function_signature(line)
-      break if name && parameters
-    end
+    parse_function_signature
   end
   
   def doc_no_lines
-    lines.join
+    lines.map { |line| line.gsub(/(?:^|\s)#.*/,'').gsub(/\n/,"") }.join # remove comments from end of each line
   end
   
-  def parse_function_signature(line)
-    if doc_no_lines =~ /([\w_]+[$&#~@?]?(?:\{\}|\[\])?)\((.*)\)\s*=/
+  def parse_function_signature
+    if doc_no_lines =~ /([\w_]+[$&#~@?]?(?:\{\}|\[\])?)\((.*)\)[\s\t]*=/
       @name, parameter_str = $1, $2
-      @parameter_defns     = parameter_str.split(/\s*,\s*/).map { |param_str| param_str.split }
+      @parameter_defns     = parameter_str.split(/[\s\t]*,[\s\t]*/).map { |param_str| param_str.split }
       @parameters          = parameter_defns.map { |defn, name| name }
       @signature           = "#{name}(#{parameter_defns.map { |defn, name| "#{defn} #{name}" }.join(', ')})"
     end

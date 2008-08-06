@@ -5,7 +5,7 @@ require "parameter_comments"
 class TestParameterComments < Test::Unit::TestCase
   context "function with several parameters" do
     setup do
-      file          = fixtures_dir + "/function_defns/function_with_several_parameters.epm"
+      file          = fixtures_dir + "/epm_functions/PretendFunctions/function_with_several_parameters.epm"
       lines         = File.readlines(file)
       @result_doc   = ParameterComments.new.run(lines)
       @result_lines = @result_doc.split("\n")
@@ -27,7 +27,7 @@ class TestParameterComments < Test::Unit::TestCase
   
   context "function with no parameters" do
     setup do
-      file          = fixtures_dir + "/function_defns/function_with_no_parameters.epm"
+      file          = fixtures_dir + "/epm_functions/PretendFunctions/function_with_no_parameters.epm"
       lines         = File.readlines(file)
       @result_doc   = ParameterComments.new.run(lines)
       @result_lines = @result_doc.split("\n")
@@ -42,7 +42,7 @@ class TestParameterComments < Test::Unit::TestCase
   
   context "function with several parameters but some already commented" do
     setup do
-      file          = fixtures_dir + "/function_defns/function_with_several_parameters_and_some_param_comments.epm"
+      file          = fixtures_dir + "/epm_functions/PretendFunctions/function_with_several_parameters_and_some_param_comments.epm"
       lines         = File.readlines(file)
       @result_doc   = ParameterComments.new.run(lines)
       @result_lines = @result_doc.split("\n")

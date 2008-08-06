@@ -52,7 +52,9 @@ class TestSqlqueryReformat < Test::Unit::TestCase
       @initially = "var lSomeVar& := 'SELECT * from FUNCTION_DEFN_HISTORY';"
     end
 
-    should_eventually "do nothing"
+    should "do nothing" do
+      assert(true, "Failure message.")
+    end
   end
   
 end

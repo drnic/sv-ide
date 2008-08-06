@@ -1,0 +1,90 @@
+#****f* Local/ReferenceCodeAbbreviations-integer-1.epm 
+# SERVICE
+# Local
+# APPLICATION ENVIRONMENT
+# Any
+# CONTEXT
+# Any
+
+# THIS ITEM CALLS
+# |html <pre>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/biReferenceCodeFetchByName-integer-1_epm.html'>biReferenceCodeFetchByName&</a>
+# |html </pre>
+
+# THIS ITEM IS CALLED BY
+# |html <pre>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_TRT_PromiseQryGenValid-integer-1_epm.html'>fCMN_TRT_PromiseQryGenValid&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/fCLEC_TRT_PromiseQryCreat-integer-1_epm.html'>fCLEC_TRT_PromiseQryCreat&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fSC_PB_CalcPromiseDates-integer-1_epm.html'>fSC_PB_CalcPromiseDates&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fagEVS_Expr_00020395_00000008-integer-1_epm.html'>fagEVS_Expr_00020395_00000008&</a>
+# |html </pre>
+#---------------------------------------------------------------------------
+#
+# FILE
+#       ReferenceCodeAbbreviations&
+#   Created:    18-01-2001 15:15:27
+# AUTHOR
+#    nvanderw  (Niel Van der Walt)
+# HISTORY
+#   $Revision: 1.1 $
+#   $Id: 10025.exp,v 1.1 2004/12/04 05:41:26 sc1dev1b Exp $
+#
+#       ============================================================
+#       Copyright C - 2001 All rights reserved. Saville Systems PLC.
+#
+#       No part of this program may be reproduced or adapted in any
+#             form or by any means, electronic or mechanical,
+#       without permission from Saville Systems PLC. This program is
+#           confidential and may not be disclosed, decompiled or
+#           reverse engineered without permission in writing from
+#                           Saville Systems PLC.
+#       ============================================================
+#
+# NAME ReferenceCodeAbbreviations&
+#   
+#
+# DESCRIPTION
+#   Describe what the function does
+#
+# PARAMETERS
+#   parm1& - Description of parameter 1.
+#   parm2$ - Description of parameter 2.
+#
+# RESULT
+#   Describe what the function returns.
+#
+# HISTORY
+#   $Log: 10025.exp,v $
+#   Revision 1.1  2004/12/04 05:41:26  sc1dev1b
+#   Ticket 1064: Initial Checkin
+#
+#   Revision 1.1  2001/04/05 18:28:56  syates
+#   Ticket 30066: Added under initial ECCS control.
+#
+#   Revision 1.2  2001/01/18 23:21:34  nvanderw
+#   Ticket 30066: Added revision history tags
+#
+#   Revision 1.1  2001/01/16 00:26:56  nvanderw
+#   Ticket 30066: Added under initial ECCS control.
+#
+# SOURCE
+
+
+ReferenceCodeAbbreviations&(l_TypeLabel$, var l_Abbrevs$[]) = {
+
+    var lRefCodes&[]; 
+    var labbr$[];
+    var lcodlbl$[];
+    var lenabl&[];
+    var ldesc$[];
+    
+    biReferenceCodeFetchByName&(l_TypeLabel$,lRefCodes&[],labbr$[],lcodlbl$[],lenabl&[],ldesc$[]);
+    l_Abbrevs$[] := labbr$[];
+    return(sizeof(lRefCodes&[]));
+
+}
+
+#
+#       End (of ReferenceCodeAbbreviations&)
+#
+#*****

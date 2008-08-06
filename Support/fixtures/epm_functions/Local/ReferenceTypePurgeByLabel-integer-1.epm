@@ -1,0 +1,20 @@
+#****f* Local/ReferenceTypePurgeByLabel-integer-1.epm 
+# SERVICE
+# Local
+# APPLICATION ENVIRONMENT
+# Any
+# CONTEXT
+# Any
+
+# THIS ITEM CALLS
+# |html <pre>
+# |html </pre>
+
+# THIS ITEM IS CALLED BY
+# |html <pre>
+# |html </pre>
+# SOURCE
+ReferenceTypePurgeByLabel&(const TypeLabel$) = { 
+    abort(58, ['ReferenceTypePurgeByLabel&()']);
+}
+#*****

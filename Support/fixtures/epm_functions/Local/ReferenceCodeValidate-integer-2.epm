@@ -1,0 +1,32 @@
+#****f* Local/ReferenceCodeValidate-integer-2.epm 
+# SERVICE
+# Local
+# APPLICATION ENVIRONMENT
+# Any
+# CONTEXT
+# Any
+
+# THIS ITEM CALLS
+# |html <pre>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ReferenceCodeValidate-integer-1_epm.html'>ReferenceCodeValidate&</a>
+# |html </pre>
+
+# THIS ITEM IS CALLED BY
+# |html <pre>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fCMN_TRT_GenerateLetterQuery-integer-1_epm.html'>fCMN_TRT_GenerateLetterQuery&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/biFunctionValidateFields-integer-1_epm.html'>biFunctionValidateFields&</a>
+# |html </pre>
+# SOURCE
+ReferenceCodeValidate&(
+    const ReferenceTypeLabel$,  # Type label of reference type to check against
+    const ReferenceCode&) =     # Reference code to check for
+{
+    var lFieldName$ := ReferenceTypeLabel$;
+    if (substr(ReferenceTypeLabel$, length(ReferenceTypeLabel$)-6,5) != '_CODE')  {
+        # Append _CODE suffix to field name
+        lFieldName$ += '_CODE';
+    }
+    ReferenceCodeValidate&(ReferenceTypeLabel$, ReferenceCode&, lFieldName$);
+}
+        
+#*****

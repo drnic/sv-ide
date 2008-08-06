@@ -11,6 +11,13 @@ require "Shoulda"
 gem "mocha"
 require "mocha"
 
+require "environment"
+module Environment
+  def self.cache_dir
+    File.dirname(__FILE__) + "/../fixtures"
+  end
+end
+
 class Test::Unit::TestCase
   def fixtures_dir
     File.dirname(__FILE__) + "/../fixtures"

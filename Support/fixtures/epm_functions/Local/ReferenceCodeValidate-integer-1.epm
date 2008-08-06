@@ -1,0 +1,36 @@
+#****f* Local/ReferenceCodeValidate-integer-1.epm 
+# SERVICE
+# Local
+# APPLICATION ENVIRONMENT
+# Any
+# CONTEXT
+# Any
+
+# THIS ITEM CALLS
+# |html <pre>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ReferenceCodeLabel-string-1_epm.html'>ReferenceCodeLabel$</a>
+# |html </pre>
+
+# THIS ITEM IS CALLED BY
+# |html <pre>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRW/biFunctionValidateFields-integer-1_epm.html'>biFunctionValidateFields&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/ReferenceCodeValidate-integer-2_epm.html'>ReferenceCodeValidate& (2)</a>
+# |html </pre>
+# SOURCE
+ReferenceCodeValidate&(
+    const ReferenceTypeLabel$,  # Type label of reference type to check against
+    const ReferenceCode&,       # Reference code to check for
+    const FieldName$) =         # Name of field/column to include in error message 
+{
+    try  {
+        ReferenceCodeLabel$(ReferenceTypeLabel$, ReferenceCode&);
+    }
+    except {
+        # Invalid code
+        abort(5521, [ReferenceCode&, FieldName$]);
+    }
+    
+    # OK if get here
+    return TRUE;
+}
+#*****

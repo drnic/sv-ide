@@ -7,7 +7,8 @@ require "ui"
 
 class FunctionAutoComplete
   def run(partial_word)
-    return partial_word unless function_list = FunctionDefn.find_by_partial(partial_word)
+    function_list = FunctionDefn.find_names_by_partial(partial_word)
+    return partial_word if function_list.nil? || function_list.size == 0
     function_name = function_list.first
     if function_list.length > 1
       functions = function_list.map { |func_name| {"title" => func_name} }

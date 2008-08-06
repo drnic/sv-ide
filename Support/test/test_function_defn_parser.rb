@@ -29,7 +29,7 @@ class TestFunctionDefnParser < Test::Unit::TestCase
   
   context "function with several parameters" do
     setup do
-      file    = fixtures_dir + "/function_defns/function_with_several_parameters.epm"
+      file    = fixtures_dir + "/epm_functions/PretendFunctions/function_with_several_parameters.epm"
       lines   = File.readlines(file)
       @parser = FunctionDefnParser.new(lines)
     end
@@ -74,6 +74,47 @@ fTT_PRD_List_CustProducts?[](const l_CustomerNodeId&
         "c_ReturnFormat$", "c_ReturnCLP&"]
     should_have_signature 'fTT_PRD_List_CustProducts?[](const l_CustomerNodeId&, const l_EffectiveDate~, ' +
       'const c_PrdInstStsList?[], const c_ReturnFormat$, const c_ReturnCLP&)'
+  end
+  
+  context "function with comments for each parameter" do
+    setup do
+      function = <<-LINES
+# SOURCE
+SQLQuery?[](
+    const SQLText$,        # SQL statement to execute
+    const ParamNames$[],  # Names of parameters in statement
+    const ParamValues?[])  # Values to pass to parameters
+= 
+{
+    # SQLQuery?[]() is a built-in function which when executed within an appropriate server, executes the 
+    # statement locally.  In cases where the SQLQuery?[]() function is not built-in, default to calling the
+    # remote version.  This means configurers can always call SQLQuery?[]() in any environment and expect 
+    # it to execute ok.
+
+    biSQLQuery?[](SQLText$, ParamNames$[], ParamValues?[]);
+}
+      LINES
+      file    = fixtures_dir + "/epm_functions/Local/SQLQuery-unknownarray-1.epm"
+      lines   = File.readlines(file)
+      @parser = FunctionDefnParser.new(lines)
+      # @parser = FunctionDefnParser.new(function.split("\n"))
+    end
+
+    should_have_name "SQLQuery?[]"
+    should_have_parameters ["SQLText$", "ParamNames$[]", "ParamValues?[]"]
+    should_have_signature 'SQLQuery?[](const SQLText$, const ParamNames$[], const ParamValues?[])'
+  end
+  
+  context "function with parameters starting on next line" do
+    setup do
+      file    = fixtures_dir + "/epm_functions/Local/ReferenceCodeValidate-integer-1.epm"
+      lines   = File.readlines(file)
+      @parser = FunctionDefnParser.new(lines)
+    end
+
+    should_have_name "ReferenceCodeValidate&"
+    should_have_parameters ["ReferenceTypeLabel$", "ReferenceCode&", "FieldName$"]
+    should_have_signature 'ReferenceCodeValidate&(const ReferenceTypeLabel$, const ReferenceCode&, const FieldName$)'
   end
   
   

@@ -1,0 +1,30 @@
+#****f* treRollback/treRollback-integer-1.epm 
+# SERVICE
+# treRollback
+# REMOTE CALL TYPE
+# Built-in
+# APPLICATION ENVIRONMENT
+# Any
+# CONTEXT
+# Any
+
+# THIS ITEM CALLS
+# |html <pre>
+# |html </pre>
+
+# THIS ITEM IS CALLED BY
+# |html <pre>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_PRD_MultiProdOrd_Add_Async-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Add_Async&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_PRD_MultiProdOrd_CompProd_Add_Q-integer-1_epm.html'>fT2_PRD_MultiProdOrd_CompProd_Add_Q&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fT2_PRD_MultiProdOrd_Cascade_Q-integer-1_epm.html'>fT2_PRD_MultiProdOrd_Cascade_Q&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fTT_TRG_TriggerTableInsert_Msg_R-integer-1_epm.html'>fTT_TRG_TriggerTableInsert_Msg_R&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/fT2_InvoiceDeallocateForCustomer-integer-1_epm.html'>fT2_InvoiceDeallocateForCustomer&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/fTT_TRG_TriggerTableUpdate-integer-1_epm.html'>fTT_TRG_TriggerTableUpdate&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/zbiInvoiceDeallocateForCustomer-integer-1_epm.html'>zbiInvoiceDeallocateForCustomer&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/Local/biApplyTransactions-integer-1_epm.html'>biApplyTransactions&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biFnEvaluateRO/biClusterConfigure-integer-1_epm.html'>biClusterConfigure&</a>
+# |html Function - <a href='http://otto.tele2.se:8080/t2dev00b/atai/dev/src/doc/epm_functions/biBillRunRO/biInvoiceAllocateCustomers-integer-1_epm.html'>biInvoiceAllocateCustomers&</a>
+# |html </pre>
+# SOURCE
+treRollback&() = { abort(57, ['treRollback&']); }
+#*****
